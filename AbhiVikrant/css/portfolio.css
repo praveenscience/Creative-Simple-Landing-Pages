@@ -1,0 +1,104 @@
+.filter-button {
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #42B32F;
+    margin-bottom: 30px;
+}
+
+.filter-button:hover {
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #42B32F;
+}
+
+.btn-default:active .filter-button:active {
+    background-color: #42B32F;
+    color: white;
+}
+
+@media only screen and (max-width: 568px) {
+    .filter-button {
+        font-size: 10px;
+        border: 1px solid #42B32F;
+        border-radius: 5px;
+        text-align: center;
+        color: #42B32F;
+        margin-bottom: 30px;
+    }
+    .filter-button:hover {
+        font-size: 10px;
+        border: 1px solid #42B32F;
+        border-radius: 5px;
+        text-align: center;
+        color: #ffffff;
+        background-color: #42B32F;
+    }
+    .btn-default:active .filter-button:active {
+        background-color: #42B32F;
+        color: white;
+    }
+    .r {
+        display: inline-flex !important;
+    }
+    .gallery_product {
+        margin-bottom: 36px !important;
+        padding: 0 !important;
+    }
+    figure {
+        flex: none !important;
+        padding: 0px !important;
+    }
+    .zoom {
+        padding: 50px;
+        transition: transform .2s;
+        width: 200px;
+        height: 200px;
+        margin: auto;
+    }
+}
+
+.port-image {
+    width: 100%;
+}
+
+.gallery_product {
+    margin-bottom: 30px;
+}
+
+.gallery_product figcaption {
+    color: white;
+}
+
+.r {
+    display: flex;
+}
+
+figure {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.zoom {
+    padding: 50px;
+    transition: transform .2s;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.5);
+}
+
+figcaption button {
+    margin-top: 10px;
+}
