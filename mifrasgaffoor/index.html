@@ -1,0 +1,171 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        list-style: none;
+        text-decoration: none;
+        font-family: "Josefin Sans", sans-serif;
+      }
+
+      p {
+        margin-bottom: 15px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #1a237e;
+        font-family: "Allura", cursive;
+      }
+      h1.title {
+        margin-bottom: 20px;
+        color: #1a237e;
+        font-family: "Allura", cursive;
+        text-transform: uppercase;
+        font-size: 38px;
+        word-spacing: 25px;
+        letter-spacing: 5px;
+      }
+
+      /* Navigation Bar */
+      .navbar {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #fff;
+        box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar .navbar_list ul {
+        display: flex;
+      }
+      .navbar .navbar_list ul li {
+        text-transform: uppercase;
+        margin: 0 10px;
+      }
+
+      .navbar .navbar_list ul li a {
+        color: #f44336;
+        font-weight: bold;
+        font-size: 16px;
+        font-family: "Allura", cursive;
+      }
+      .navbar .navbar_list ul li activehome:active {
+        color: #1a237e;
+      }
+
+      .navbar .navbar_list ul li a:hover {
+        color: #1a237e;
+      }
+
+      .homepage_image {
+        background-size: cover;
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .welcome-text {
+        text-align: center;
+        color: #fff;
+      }
+
+      #welcome-text-text {
+        font-size: 30px;
+        font-weight: bold;
+      }
+      h4 {
+        font-family: "Allura", cursive;
+      }
+
+      .btn a {
+        width: 140px;
+        height: 40px;
+        line-height: 35px;
+        border: 3px solid #f44336;
+        border-radius: 50px;
+        color: white;
+        font-weight: bold;
+        display: block;
+        margin: 25px auto 0;
+        text-align: center;
+        font-family: "Allura", cursive;
+        background-color: #f44336;
+      }
+
+      .btn a:hover {
+        color: #1a237e;
+      }
+
+      @media (max-width: 720px) {
+        .navbar {
+          height: auto;
+          flex-direction: column;
+        }
+
+        .logo {
+          margin-bottom: 25px;
+        }
+
+        .navbar_list ul {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .navbar_list ul li {
+          margin-bottom: 5px;
+        }
+
+        .welcome-text {
+          margin-top: 35px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <img
+          src="https://webneel.com/image/logo/37-hotel-logos.gif"
+          alt="logo"
+          width="400"
+          height="55"
+        />
+      </div>
+      <div class="navbar_list">
+        <ul>
+          <li><a href="#" style="color: #1a237e">home</a></li>
+          <li><a href="#">Recipe </a></li>
+          <li><a href="#">accommodation</a></li>
+          <li><a href="#"> about</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="homepage_image">
+      <img
+        src="https://media.istockphoto.com/vectors/happy-tourists-choosing-hotel-and-booking-room-online-vector-id1281244663?k=20&m=1281244663&s=612x612&w=0&h=Fzy9_FzB-S3SaxtvFAzAwLElP_2FlDAXgjtXtgO_Q1I="
+        alt="homepage_image"
+      />
+    </div>
+    <div class="welcome-text">
+      <p id="welcome-text-text">Wel Come to mmm Hotel & Restuent</p>
+      <h4 style="color: #f44336">
+        <br />
+        The finest star class hotel in Sri Lanka with the best of recipe &
+        accommodation
+      </h4>
+      <div class="btn">
+        <a href="#">for booking</a>
+      </div>
+    </div>
+  </body>
+</html>
