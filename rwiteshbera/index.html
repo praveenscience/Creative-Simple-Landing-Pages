@@ -6,12 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>RedWitch</title>
 </head>
 
 <body>
     <section class="navbar">
         <nav class="nav">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn" id="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
             <h3 id="title">RedWitch</h3>
             <ul class="list">
                 <li>Home</li>
@@ -22,8 +27,21 @@
                 <li>Contact</li>
                 <button id="get-started">Get Started</button>
             </ul>
+
+            <div class="media-menu-bar" id="media-menu">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Product</li>
+                    <li>Services</li>
+                    <li>Team</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
         </nav>
     </section>
+
+
 
     <section class="main">
         <video autoplay muted loop id="bg-video">
@@ -42,8 +60,8 @@
                     repellendus, doloremque maiores sint nulla saepe atque, iste odit ipsam non fuga incidunt vel illum?
                     Deleniti, est! Assumenda, ratione nihil. Reiciendis cumque, laborum eveniet neque atque nesciunt
                     dolores dolorum vero placeat. Aliquid, explicabo.</p>
-                </div>
-                <p id="read-more">Read More</p>
+            </div>
+            <p id="read-more">Read More</p>
         </div>
     </section>
 
@@ -92,13 +110,13 @@
                 <img src="./images/member.png" alt="" srcset="">
                 <p>Mr. A</p>
             </div>
-           
+
         </div>
 
         <footer>
             RedWitch © 2021
         </footer>
-    <script src="./script.js"></script>
+        <script src="./script.js"></script>
 </body>
 
 </html>

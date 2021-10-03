@@ -33,19 +33,35 @@ body{
 .navbar .nav #title{
     font-size: 2rem;
     font-family: 'Lato', sans-serif;
+    margin-right: 2rem;
 }
 
+#check{
+    display: none;
+}
+.navbar .nav .checkbtn{
+    font-size: 30px;
+    color: black;
+    float: right;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.checkbtn i{
+    line-height: 40px;
+    display: none;
+}
 .navbar .nav .list{
     display: flex;
     position: absolute;
-    right: 5rem;
-    font-size: 1.2rem;
+    right: 4rem;
+    font-size: 1.1rem;
     font-family: 'Roboto', sans-serif;
     list-style: none;
 }
 
 .navbar .nav .list li{
-    margin-right: 2rem;
+    margin-right: 1rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
     border-radius: 2rem;
 }
@@ -56,7 +72,33 @@ body{
     color: white;
 }
 
+.media-menu-bar{
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top:4rem;
+    width: 100vw;
+    display: none;
+}
 
+.media-menu-bar ul{
+    border-top: 1px solid grey;
+    display: flex;
+    list-style: none;
+    font-size: 1.1rem;
+    
+}
+
+.media-menu-bar ul li{
+    background-color: green;
+    margin: 1vh 1vw 1vh 1vw;
+    cursor: pointer;
+    color: white;
+    padding: 0.4rem 1rem 0.4rem 1rem;
+    border-radius: 2rem;
+    /* display: none; */
+}
 
 .navbar .nav .list button{
     padding: 0.5rem 1rem 0.5rem 1rem;
@@ -201,6 +243,7 @@ body{
     width: 70vw;
 }
 .call .call-div button{
+    height: 3.5rem;
     cursor: pointer;
     background-color: rgb(6, 83, 6);
     padding: 0.2rem 2rem 0.2rem 2rem;
@@ -257,4 +300,128 @@ footer{
     margin-top: 5rem;
     padding: 1rem;
     font-size: 1rem;
+}
+
+/* Add media query */
+
+@media screen and (max-width: 952px){
+    #title{
+        color: blue;
+    }
+    
+    .list li{
+        display: none;
+    }
+
+    #check{
+        display: none;
+    }
+    .checkbtn i{
+        display: block; 
+    }
+
+    .main .container .sample-text h4 {
+        font-size: 1.6rem;
+    }
+
+    .main .container .sample-text p{
+        font-size: 1.2rem;
+    }
+    
+    .main .container #read-more{
+        margin-left: 0%;
+
+    }
+
+    .main video{
+        display: none;
+    }
+
+    .colorlayer{
+        display: none;
+    }
+
+    .main .container{
+        background-color: green;
+        margin: 0;
+        margin-top: 2rem;
+        padding-top: 4rem;
+        width: 100vw;
+        height: 40vh;
+    }
+
+    .main .container #read-more{
+    margin: 20rem auto;
+    margin-left: 5rem;
+    }
+
+    .about{
+        margin-top: -8rem;
+    }
+    .about .about-text{
+        width: 100vw;
+        font-size: 1.2rem;
+    }
+    .about-image{
+        display: none;
+    }
+
+    .call h4{
+        font-size: 1.3rem;
+    }
+
+    .call .call-div{
+        font-size: 1rem;
+    }
+
+    .call .call-div button{
+        font-size: 1rem;
+    }
+    .team-member .member1{
+        height: 70%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team-member .member1 div img{
+        width: 70%;
+    }
+    
+}
+
+/* // Media query for mobile phone */
+@media screen and (max-width: 576px){
+    .main{
+        height: 80vh;
+    }
+    .media-menu-bar ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .media-menu-bar ul li{
+        margin: 0.2rem;
+        font: size 1rem;
+    }
+
+    .main .container{
+    height: 50vh;
+    }
+    .main .container .sample-text h4{
+        font-size: 1.1rem;
+    }
+    .main .container .sample-text p{
+        font-size: 1rem;
+    }
+    .main .container .sample-text #read-more{
+        font-size: 1rem;
+    }
+
+    .about{
+        margin-top: 1rem;
+        margin-right: 1rem;
+    }
+    .about .about-text{
+        font-size: 1rem;
+    margin-top: -8rem;
+    }
 }
