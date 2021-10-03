@@ -222,11 +222,23 @@ h5 {
   }
   @media (max-width: 480px) {
     body {
-      font-size: 11px;
+      font-size: 8px;
+    }
+    button {
+      background-color: #ef233c;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 3rem;
+      color: white;
+      font-size: larger;
+      font-weight: bold;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+      border: 0.1rem solid transparent;
     }
     .starter .image img {
-        width: 200;
-        height: 300;
+        width: 200px;
+        height: 200px;
       }
     .info .description {
         width: 90% !important;
@@ -272,14 +284,10 @@ h5 {
       nav .links ul button {
         padding: 1rem 2rem;
       }
-      .starter {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-      }
+     
       .starter .info {
-        margin: 1rem;
+        margin: 0rem;
+        padding-left: 1rem;
       }
     }
     @media (min-width: 768px) and (max-width: 1024px) {
