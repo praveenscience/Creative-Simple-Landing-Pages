@@ -8,7 +8,7 @@ h2.name {
 
 /* navbar section */
 nav.navbar {
-  background-image: url("./images/navBg.png");
+  background-image: url("https://github.com/ArunBalajiR/Django-Blog-Application/blob/master/media/profile_pics/navBg.png?raw=true");
   background-size: 400px;
   background-color: transparent;
   background-repeat: no-repeat;
@@ -34,13 +34,13 @@ nav .navbar-toggler:focus {
 
 /* header section */
 header {
-  background-image: url("./images/headerBg.png");
+  background-image: url("https://github.com/ArunBalajiR/Django-Blog-Application/blob/master/media/profile_pics/headerBg.png?raw=true");
   background-size: 1000px;
   background-repeat: no-repeat;
   background-position: 190% 100%;
 }
 header .cover {
-  background-image: url("./images/headerBg2.png");
+  background-image: url("https://github.com/ArunBalajiR/Django-Blog-Application/blob/master/media/profile_pics/headerBg2.png?raw=true");
   background-size: 900px;
   background-repeat: no-repeat;
   background-position: -80px 30px;
@@ -56,7 +56,7 @@ header .title {
 
 /* service section */
 #services {
-  background-image: url("./images/servicesBg.png");
+  background-image: url("https://github.com/ArunBalajiR/Django-Blog-Application/blob/master/media/profile_pics/servicesBg.png?raw=true");
   background-size: cover;
   background-position: center;
   background-color: #fafffd;
@@ -73,7 +73,7 @@ header .title {
 
 /* project section */
 #project {
-  background-image: url("./images/headerBg.png");
+  background-image: url("https://github.com/ArunBalajiR/Django-Blog-Application/blob/master/media/profile_pics/headerBg.png?raw=true");
   background-size: 40% 100%;
   background-position: 130% 50%;
   background-repeat: no-repeat;
@@ -112,7 +112,7 @@ header .title {
 /* pricing section */
 #pricing {
   background-color: #fafffd;
-  background-image: url("./images/pricingBg.png");
+  background-image: url("https://github.com/ArunBalajiR/Django-Blog-Application/blob/master/media/profile_pics/pricingBg.png?raw=true");
   background-size: 1100px;
   background-repeat: no-repeat;
   background-position: -480px -150px;
