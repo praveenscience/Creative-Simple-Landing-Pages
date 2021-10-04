@@ -1,22 +1,22 @@
 .contianer2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
-    overflow-y: hidden;
-    overflow-x: hidden;
-    margin: 5px;
-    position: inherit;
-    text-align: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin: 5px;
+  position: inherit;
+  text-align: center;
 }
 
 .card-body {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .navbar {
-    position: sticky;
-    top: 0;
+  position: sticky;
+  top: 0;
 }
