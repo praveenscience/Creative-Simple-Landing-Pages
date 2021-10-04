@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+    <title>NEWS 24*7</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">NEWS </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container my-3">
+      <h2>LATEST NEWS <span class="badge bg-secondary">By NEWS</span></h2>
+      <hr />
+    </div>
+
+    <div class="contianer2">
+      <div class="card" id="newscard1">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size: 10vw">Card title</h5>
+          <p class="card-text" style="font-size: 5vw">the caard will appear here</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  </body>
+  <script>
+    //Grab the news container
+    let newscard1 = document.getElementById("newscard1");
+
+    // Create get request
+    const xhr = new XMLHttpRequest();
+    xhr.open("get", "https://gnews.io/api/v4/top-headlines?token=e379358b937fe0e79da96efb0f85e7a6&lang=en", true);
+    xhr.onload = function () {
+      if (this.status === 200) {
+        let json = JSON.parse(this.responseText);
+        console.log(json);
+        let articles = json.articles;
+        // console.log(articles)
+        let newshtml = "";
+        articles.forEach(function (element) {
+          let news = `<div class="card" style="width: 32rem;" id="newscard1">
+  <img src="${element["image"]}" class="card-img-top" alt="...">
+  <div class="card-body" >
+    <h5 class="card-title" style="box-sizing: border-box;">${element["title"]}</h5>
+    <p class="card-text">${element["content"]}</p>
+    <a href="${element["url"]}" class="btn btn-primary" target = "_nothing">Read full article</a>
+  </div>
+</div>`;
+          newshtml += news;
+        });
+        newscard1.innerHTML = newshtml;
+      } else {
+        console.log("Some error occured");
+      }
+    };
+    xhr.send();
+  </script>
+</html>
