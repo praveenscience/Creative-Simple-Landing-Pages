@@ -1,0 +1,217 @@
+/* all section */
+html {
+  scroll-behavior: smooth;
+}
+h2.name {
+  font-family: "Yeseva One", cursive;
+}
+
+/* navbar section */
+nav.navbar {
+  background-image: url("https://github.com/ArunBalajiR/Django-Blog-Application/blob/master/media/profile_pics/navBg.png?raw=true");
+  background-size: 400px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: -200px -220px;
+}
+nav.navbar a {
+  margin: 0 10px;
+  font-weight: 600;
+}
+nav .navbar-toggler:focus {
+  outline: none;
+}
+.curv {
+  background: linear-gradient(to right, #1cd9b8, #06aced);
+  color: white;
+  border-radius: 23px 0 23px 0;
+  transition: 0.3s ease;
+}
+.curv:hover {
+  color: white;
+  transform: scale(1.08);
+}
+
+/* header section */
+header {
+  background-image: url("https://github.com/ArunBalajiR/Django-Blog-Application/blob/master/media/profile_pics/headerBg.png?raw=true");
+  background-size: 1000px;
+  background-repeat: no-repeat;
+  background-position: 190% 100%;
+}
+header .cover {
+  background-image: url("https://github.com/ArunBalajiR/Django-Blog-Application/blob/master/media/profile_pics/headerBg2.png?raw=true");
+  background-size: 900px;
+  background-repeat: no-repeat;
+  background-position: -80px 30px;
+}
+header .text {
+  padding-left: 100px;
+}
+header .title {
+  font-family: "Yeseva One", cursive;
+  font-size: 5vw;
+  line-height: 0.9;
+}
+
+/* service section */
+#services {
+  background-image: url("https://github.com/ArunBalajiR/Django-Blog-Application/blob/master/media/profile_pics/servicesBg.png?raw=true");
+  background-size: cover;
+  background-position: center;
+  background-color: #fafffd;
+}
+#services .card {
+  background-color: transparent;
+  border-radius: 50px 0 50px 0;
+  transition: 0.3s ease;
+}
+#services .card:hover {
+  background-color: white;
+  box-shadow: 0 0 30px 1px #ceffff;
+}
+
+/* project section */
+#project {
+  background-image: url("https://github.com/ArunBalajiR/Django-Blog-Application/blob/master/media/profile_pics/headerBg.png?raw=true");
+  background-size: 40% 100%;
+  background-position: 130% 50%;
+  background-repeat: no-repeat;
+}
+
+/* achievement section */
+#achievement {
+  background-color: #fafffd;
+}
+.achievement {
+  color: gray;
+  background: #fff;
+  box-shadow: 10px 10px 6px #eafdf4;
+  transition: 0.3s ease;
+}
+.achievement img {
+  filter: brightness(1);
+  transition: 0.3s ease;
+}
+.ach-1,
+.ach-4 {
+  border-radius: 0 65px 0 65px;
+}
+.ach-2,
+.ach-3 {
+  border-radius: 65px 0 65px 0;
+}
+.achievement:hover {
+  background: linear-gradient(to left, #1cd9b8, #06aced);
+  color: white;
+}
+.achievement:hover img {
+  filter: brightness(3);
+}
+
+/* pricing section */
+#pricing {
+  background-color: #fafffd;
+  background-image: url("https://github.com/ArunBalajiR/Django-Blog-Application/blob/master/media/profile_pics/pricingBg.png?raw=true");
+  background-size: 1100px;
+  background-repeat: no-repeat;
+  background-position: -480px -150px;
+}
+#pricing hr {
+  background-color: #1cd9b8;
+  height: 1px;
+  width: 200px;
+  margin: 0 auto;
+}
+#pricing h6 {
+  font-size: 18px;
+  margin-top: 20px;
+}
+#pricing button.btn {
+  background: linear-gradient(to right, #1cd9b8, #06aced);
+  width: 180px;
+  height: 50px;
+  margin: 20px auto 0 auto;
+  color: white;
+  border-radius: 23px 0 23px 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+}
+#pricing .card {
+  border: 3px solid transparent;
+  transition: 0.3s ease;
+}
+#pricing .card:hover {
+  border: 3px solid #1cd9b8;
+}
+#pricing .card:hover button.btn {
+  visibility: visible;
+}
+#pricing button.btn:hover {
+  transform: scale(1.08);
+  transition: 0.3s ease;
+}
+
+/* subscribe section */
+#subscribe {
+  background-color: #fafffd;
+}
+#subscribe .d-flex {
+  margin: auto;
+  max-width: 600px;
+}
+#subscribe input.btn {
+  background: linear-gradient(to right, #1cd9b8, #06aced);
+  height: 40px;
+  min-width: 110px;
+  color: white;
+  border-radius: 5px;
+}
+#subscribe input {
+  font-size: 16px;
+  min-width: 50px;
+}
+
+/* footer section */
+footer {
+  background-color: #fafffd;
+}
+footer .brandList {
+  max-width: 200px;
+}
+footer img.brand {
+  filter: grayscale(100%);
+}
+footer img,
+footer li {
+  cursor: pointer;
+  color: gray;
+}
+footer li:hover {
+  color: #06aced;
+}
+
+/* media queries */
+@media (max-width: 1200px) {
+  header {
+    background-image: none;
+  }
+  header .text {
+    padding-left: 30px;
+  }
+}
+@media (max-width: 768px) {
+  nav a.navbar-brand img {
+    width: 100px;
+  }
+  header .title {
+    font-size: 9vw;
+  }
+  #services .card {
+    min-width: 250px;
+    margin: 0%;
+  }
+  #project {
+    background-image: none;
+  }
+}
