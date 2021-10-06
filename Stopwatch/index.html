@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Stop The Watch</title>
+    <!-- linking stylesheet -->
+    <link rel="stylesheet" href="./styles.css" /> 
+    <!-- linking favicon -->
+    <link
+      rel="icon"
+      href="https://img.icons8.com/color/48/000000/stopwatch--v2.png"
+    />
+  </head>
+  <body>
+    <!-- navbar elements -->
+    <div>
+      <nav class="navbar">
+        <span class="logo">Stop Watch</span>
+        <ul class="nav-list">
+          <a href="#"><li>Home</li></a>
+          <a href="#"><li>Contact</li></a>
+          <a href="#"><li>About</li></a>
+        </ul>
+      </nav>
+    </div>
+    <!-- body elementes  -->
+    <div class="body-ele">
+      <div id="stopwatch">00:00:00</div>
+      <ul id="buttons">
+        <li><button onclick="startTimer()">Start</button></li>
+        <li><button onclick="stopTimer()">Stop</button></li>
+        <li><button onclick="resetTimer()">Reset</button></li>
+      </ul>
+    </div>
+    <!-- adding footer -->
+    <footer>Made with ❤ for open source</footer>
+    <!-- linking script file -->
+    <script src="./index.js"></script>
+  </body>
+</html>

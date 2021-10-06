@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  position: relative;
+  top: 0.8rem;
+  margin-left: 5rem;
+  color: aquamarine;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: solid;
+  font-weight: bolder;
+  font-size: 30px;
+}
+.logo:hover {
+  color: #b3d5c3;
+}
+.navbar {
+  height: 8vh;
+  width: 100%;
+  background-color: cadetblue;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  float: right;
+  margin-right: 5rem;
+}
+li {
+  text-align: center;
+  margin: 1rem;
+  color: #b3d5c3;
+  cursor: pointer;
+}
+li:hover {
+  color: aquamarine;
+}
+a:link {
+  text-decoration: none;
+}
+.body-ele {
+  height: 88vh;
+  width: 100%;
+  background-color: bisque;
+}
+button {
+  width: 100px;
+  height: 30px;
+  border: 3px soldi white;
+  border-radius: 50px;
+  background: #202020;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+#stopwatch {
+  font-size: 100px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+}
+#buttons {
+  position: absolute;
+  top: 55%;
+  left: 50.1%;
+  transform: translate(-51.6%, -45%);
+}
+#buttons li {
+  display: inline;
+  padding-left: 10px;
+}
+footer {
+  height: 4vh;
+  width: 100%;
+  background-color: cadetblue;
+  color: #b3d5c3;
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  .nav-list {
+    visibility: hidden;
+    display: none;
+  }
+  .logo {
+    align-items: center;
+  }
+}
