@@ -1,0 +1,78 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000000;
+}
+body::after {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 250px;
+  content: "";
+  background-color: #1d9bf0;
+  z-index: -1;
+}
+.intro {
+  color: white;
+
+  margin: 100px;
+  overflow: hidden;
+  background-color: #15181c;
+  text-align: center;
+  border-radius: 20px;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px,
+    rgba(255, 255, 255, 0.12) 0px -12px 30px,
+    rgba(255, 255, 255, 0.12) 0px 4px 6px,
+    rgba(255, 255, 255, 0.17) 0px 12px 13px,
+    rgba(255, 255, 255, 0.09) 0px -3px 5px;
+  -moz-box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px,
+    rgba(255, 255, 255, 0.12) 0px -12px 30px,
+    rgba(255, 255, 255, 0.12) 0px 4px 6px,
+    rgba(255, 255, 255, 0.17) 0px 12px 13px,
+    rgba(255, 255, 255, 0.09) 0px -3px 5px;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px,
+    rgba(255, 255, 255, 0.12) 0px -12px 30px,
+    rgba(255, 255, 255, 0.12) 0px 4px 6px,
+    rgba(255, 255, 255, 0.17) 0px 12px 13px,
+    rgba(255, 255, 255, 0.09) 0px -3px 5px;
+}
+.links img {
+  margin: 45px;
+  height: 100px;
+  width: 100px;
+
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 14px 55px,
+    rgba(255, 255, 255, 0.12) 0px -12px 30px,
+    rgba(255, 255, 255, 0.12) 0px 4px 6px,
+    rgba(255, 255, 255, 0.17) 0px 12px 13px,
+    rgba(255, 255, 255, 0.09) 0px -3px 5px;
+}
+img:hover {
+  height: 120px;
+  width: 120px;
+}
+#name {
+  display: inline-flex;
+  justify-content: center;
+  background-color: #15181c;
+}
+#thinLine1 {
+  border: 1px solid #000000;
+  display: flex;
+  width: 100px;
+  justify-content: center;
+}
+#thinLine2 {
+  display: flex;
+  width: 100px;
+  justify-content: center;
+}
+#introduction {
+  color: #000000;
+  display: flex;
+  justify-content: center;
+}
