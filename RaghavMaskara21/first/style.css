@@ -1,0 +1,178 @@
+
+.card-title{
+font-family: 'Montserrat', sans-serif;
+text-align: center;
+}
+
+.card a{
+float: right;
+}
+
+body{
+    width: auto;
+    background-color: #c4e8fc;
+    padding-top: 15%;
+}
+
+button.navbar-toggler{
+margin-right: 5%;
+}
+
+.bg-nav{
+background-color: #c4e8fc
+}
+
+.card-body {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-end;
+}
+
+
+@media (max-width: 768px){
+    /* For Mobile */
+    .responsive1 {
+    width: 96%;
+    height: auto;
+    padding-left: 3%;
+    
+    }
+    /* .btn-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }   */
+    button {
+     margin: 2% auto;
+    }
+    .card{
+        margin: 2% 0;
+    }   
+    h1{
+        margin-top: 10px;
+    }
+    .responsive2{
+        display: none;
+    }
+    body{
+        padding-top: 15%;
+    }
+    div.row{
+        justify-content: center;
+    }
+
+}
+nav img{  
+    max-width:100%;
+    height:45px;         
+}
+
+
+@media (min-width: 768px){
+    /* For Laptop */
+    
+    /* .btn-links {
+        display: flex;
+        flex-direction: row;
+     } */
+     .responsive1{
+         display: none;
+         border: 2px solid black;
+     }
+     .responsive2{         
+         width: 80%;
+         margin: 0 10%;
+         border: 2px solid black;
+
+     }
+     body{
+        padding-top: 60px;
+    }
+    div.row{
+        justify-content: space-between;
+        margin: 2% 0;
+    }
+
+
+}
+
+/* 
+
+FOOTER STARTS
+
+*/
+footer{
+    background-color: black;
+    margin-bottom: 0;
+    padding: 2% 5% 5% 5%;
+    margin-right: 0;
+    margin-top: 6%;
+}
+    
+i{
+    color: white;
+}
+    
+footer p{
+    color: white;
+    margin: 0;
+    padding:0;
+}
+
+.unq_btn{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.unq_btn a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 25px;
+}
+.unq_btn .fa-stack-1x {
+    color: white;
+    font-size: 18px;
+}
+.unq_btn .fa-stack-2x {
+    transition: .3s;
+}
+.unq_btn .discord .fa-certificate {
+  color: #5764f2;
+}
+.unq_btn .fb .fa-certificate {
+  color: #3b579e;
+}
+.unq_btn .messenger .fa-certificate {
+    color: #09f;
+}
+.unq_btn .instagram .fa-certificate{
+    
+color: #d6249f;
+      
+}
+
+.unq_btn a:hover .fa-stack-2x {
+    -ms-transform: rotate(60deg);
+    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+
+@media (min-width: 768px){
+    /* For Laptop */
+    .unq_btn{
+        
+        justify-content: flex-start;
+    }
+    footer{
+        margin-top: 2%;
+    }
+}
+
+/*
+
+FOOTER ENDS
+
+*/
