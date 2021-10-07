@@ -1,0 +1,146 @@
+:root{
+    --blue:#0089CE;
+}
+
+/* Contact form css  */
+.contact-form {
+    box-shadow: 3px 20px 24px hsla(0,0%,82.4%,.25);
+    border: 1px solid #e5e5e5;
+    border-top: 3px solid #0089ce;
+    padding: 18px 30px;
+    background-color: #fff;
+    width: 65%;
+}
+
+.contact-form h4 {
+    color: var(--blue);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.wpcf7 .screen-reader-response {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    width: 1px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.contact-form form {
+    padding: 0;
+}
+
+form {
+    /* padding: 18px 30px; */
+    background-color: #fff;
+}
+
+.contact-form .field-wrapper {
+    margin-bottom: .8rem;
+    position: relative;
+}
+
+/* form .field-wrapper {
+    margin-bottom: .8rem;
+    position: relative;
+} */
+
+.contact-form input, .contact-form select {
+    border: 1px solid #e5e5e5;
+    width: 100%;
+    padding: 10px;
+}
+
+.contact-form .field-wrapper .fa {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    z-index: 2;
+    color: #9e9e9e;
+}
+
+.wpcf7-form-control-wrap {
+    position: relative;
+}
+
+.contact-form input[type=submit] {
+    padding: 0px 26px;
+    border-radius: 3px;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    background-color: var(--blue);
+    border-color: var(--blue);
+    transition: all .3s ease;
+    font-size: 28px;
+}
+
+.contact-form input[type=submit]:hover{
+    background-color:white ;
+    color: var(--blue);
+}
+
+.contact-form input, .contact-form select {
+    border: 1px solid #e5e5e5;
+    /* width: 100%; */
+    /* padding: 10px; */
+}
+
+div.wpcf7 .ajax-loader {
+    visibility: hidden;
+    display: inline-block;
+    background-image: url(../../images/ajax-loader.gif);
+    width: 16px;
+    height: 16px;
+    border: none;
+    padding: 0;
+    margin: 0 0 0 4px;
+    vertical-align: middle;
+}
+
+.wpcf7 form.init .wpcf7-response-output {
+    display: none;
+}
+
+.wpcf7 form .wpcf7-response-output {
+    margin: 2em 0.5em 1em;
+    padding: 0.2em 1em;
+    border: 2px solid #00a0d2;
+}
+
+.wpcf7-textarea{
+    width: 100%;
+    border: 1px solid #dadada;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.field-wrapper input, .field-wrapper select{
+    border-radius: 3px;
+}
+
+.field-wrapper input:focus, .field-wrapper select:focus{
+    outline: black;
+    border: 2px solid black;
+    box-shadow: none;
+}
+
+/* Only for laptop  */
+@media screen and (min-width:767px){
+    .contact-form{
+        margin-left: 130px;
+        margin-top: 110px;
+    }
+}
+
+/* Only for mobile  */
+@media screen and (max-width:767px){
+    .contact-form{
+        width: 100%;
+    }
+}
