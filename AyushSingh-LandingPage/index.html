@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #000;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+            transition:color .3s ease;
+        }
+        a:hover{
+            color: deepskyblue;
+        }
+        .wrap{
+            width: 90%;
+            margin: 0 auto;
+            max-width: 1100px;
+        }
+        header{
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            background:#f7f7f7;
+            background-size: cover;
+            background-position: 50% 100%;
+        }
+        nav{
+            width: 100%;
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo{
+            font-size: 2rem;
+        }
+        nav .menu li{
+            display: inline-block;
+            list-style: none;
+            padding-left: 30px;
+        }
+        main{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            transform: translateY(-50%);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        main .content{
+            flex-basis: 50%;
+        }
+        main .content h2 span{
+            text-transform: uppercase;
+            font-weight: 100;
+            font-size: 2rem;
+        }
+        main .content h2{
+            text-transform: uppercase;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        main .content p{
+            font-size: 1rem;
+            margin-bottom: 3rem;
+            line-height: 32px;
+        }
+
+        main .img{
+            flex-basis: 50%;
+        }
+        main img{
+            height: 100%;
+            width: 100%;
+        }
+        main .btn{
+            background:deepskyblue;
+            padding: 10px 30px;
+            color: #fff;
+            border-radius: 30px;
+        }
+        @media (max-width: 540px ){
+            nav{
+                padding: 20px;
+            }
+            .menu{
+                display: none;
+            }
+            main{
+                padding: 30px;
+            }
+
+            main .content{
+                order: 2;
+                flex-basis: 100%;
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+            main .content h2{
+            font-size: 2rem;
+            }
+            main .content p{
+                font-size: 14px;
+                margin-bottom: 1rem;
+            }
+            main .img{
+               flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="wrap">
+            <a href="#" class="logo">My Brand Design</a>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Faq</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <main class="wrap">
+            <div class="content">
+                <h2><span>Landing Page</span><br>Minimal Design</h2>
+                <p>Hey! It's me AYUSH SINGH. I'm an aspiring front-end developer and a Java and Python DSA problem solver.
+                    I'm making this landing page for my first Hacktoberfest 2021. 
+                </p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="img"><img src="D:\LandingPage\img-1\icon-removebg.png" alt="" srcset=""></div>
+        </main>
+    </header>
+</body>
+</html>
