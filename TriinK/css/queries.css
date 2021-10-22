@@ -1,0 +1,33 @@
+/* ==========================================================================
+CSS Queries
+========================================================================== */
+
+@media screen and (max-width:640px) {
+    .shop-btn { padding: 15px 25px; font-size: 10px; }
+}
+@media screen and (max-width:1200px) {
+    p{font-size: 14px; }
+    .thin-sep { display: none; }
+    .arrow { display: none; }
+    nav { height: auto; width: 100%; background: none; margin: 70px 0 0 0; }
+    .nav-wrapper { background-color: #fff; }
+    nav ul { width: 100%; display: block; height: auto; padding: 0; }
+    nav li { width: 100%; float: left; position: relative; text-align: center; }
+    nav ul li a { width: 100%; float: left; position: relative; padding: 25px 0; text-align: center; border-bottom: 1px dotted rgba(255, 255, 255, 0.2); margin: 0px; }
+    nav ul li a.last { border-bottom: none; }
+    nav ul li.dot { display: none; }
+    .responsive-logo { background: url(../img/main-logo.png) no-repeat center center; width: 94px; height: 85px; position: absolute; top: 30px; left: 10%; }
+    .logo-1 { position: absolute; left: 50%; top: 50%; }
+    .logo-holder { display: none; }
+    .logo-2 { position: absolute; left: 50%; top: 50%; }
+    .logo-3 { position: absolute; left: 50%; top: 50%; }
+    .footer-leftcol p, .footer-rightcol p { text-align: center; }
+    .footer-midcol ul { margin-top: 40px; }
+    .submit-btn { margin-top: 10px; }
+}
+@media only screen and (max-width:1200px) {
+    nav { border-bottom: 0; }
+    nav ul { display: none; height: auto; }
+    .pullcontainer { width: 100%; text-align: right; padding: 20px 20px 0 0; }
+    .pullcontainer a#pull { display: block; width: 100%; color: #242a2c; }
+}
