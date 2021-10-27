@@ -10,7 +10,7 @@ The User Interfaces feature with these qualities:
 
 * Completely Responsive
 * Code Properly Indented with ESLint & Prettier
-* Look Really Good
+* Looks Really Good and User Friendly (smooth functioning)
 
 ## Contribution Instructions
 

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Banner &amp; Navigation Bar - Responsive</title>
+    <style>
+      body {
+        margin: 0;
+        overflow-x: hidden;
+        background-color: #061221;
+        color: #fff;
+        font-family: "Noto Sans Display", sans-serif;
+      }
+
+      a,
+      li,
+      button,
+      i,
+      .button {
+        text-decoration: none;
+        outline: none !important;
+        list-style: none;
+        transition: 0.5s;
+      }
+      .title {
+        font-size: 2.5em;
+        font-weight: 600;
+      }
+
+      .sub-title {
+        font-size: 1.3em;
+        font-weight: 400;
+      }
+
+      .btn1,
+      .btn2 {
+        padding: 20px;
+        text-align: center;
+        border: 0;
+        border-radius: 40px;
+        display: block;
+        width: 150px;
+        margin: 2vh 0;
+      }
+
+      .btn1 {
+        background: #061221;
+        color: #fff;
+      }
+
+      .btn1:hover {
+        background: #fff;
+        color: #cd2027;
+      }
+
+      header {
+        position: fixed;
+        top: 2rem;
+        width: 100%;
+        z-index: 99999;
+        transition: 0.5s;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: rgba(6, 18, 33, 0.8);
+        width: 80%;
+        margin: auto;
+        box-shadow: 0px 6px 16px -6px rgba(1, 1, 1, 0.7);
+        transition: 0.5s;
+      }
+
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 24px 16px;
+        margin: auto 1rem;
+        text-decoration: none;
+        font-size: 17px;
+        position: relative;
+      }
+
+      .logo {
+        width: 40px;
+        position: absolute;
+        top: 1rem;
+        background-color: #fff;
+        border-radius: 5px;
+      }
+
+      #icon {
+        float: right;
+      }
+
+      #active {
+        display: flex;
+        font-weight: bold;
+        font-family: "Titillium Web", sans-serif;
+      }
+
+      #active:hover {
+        color: #fff;
+      }
+
+      .topnav .icon {
+        display: none;
+      }
+
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+
+      .dropdown .dropbtn {
+        font-size: 17px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 24px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: auto 1rem;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        border-top: 2px solid #cd2027;
+      }
+
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 8px 16px;
+        margin: auto 0rem;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+
+      .topnav a:hover,
+      .dropdown:hover .dropbtn {
+        color: #cd2027;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      @media screen and (max-width: 1120px) {
+        .logo {
+          width: 20px;
+          position: static;
+        }
+        .dropdown .dropbtn {
+          padding: 14px 16px;
+        }
+        .topnav a:not(:first-child),
+        .dropdown .dropbtn {
+          display: none;
+        }
+        .topnav a.icon {
+          float: right;
+          display: block;
+        }
+        #active {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 1120px) {
+        .topnav.responsive {
+          position: relative;
+        }
+        .topnav.responsive .icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        .topnav.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+          padding: 14px 16px;
+        }
+        .topnav.responsive .dropdown {
+          float: none;
+        }
+        .topnav.responsive .dropdown-content {
+          position: relative;
+        }
+        .topnav.responsive .dropdown .dropbtn {
+          display: block;
+          width: 100%;
+          text-align: left;
+        }
+      }
+
+      .banner {
+        width: 100%;
+        display: flex;
+        position: relative;
+        background: linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.5)), url("https://i.ibb.co/jhYnq6B/charset-Ascii-Pablo-Andres-Photo.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: right;
+      }
+
+      .banner section {
+        height: 100vh;
+        width: 50%;
+        position: relative;
+      }
+
+      .banner .left_section {
+        width: 100%;
+      }
+
+      .banner .left_section section {
+        background-color: transparent;
+        background-image: linear-gradient(260deg, #cd2027 44%, #cd2027 38%);
+        transform: skew(20deg);
+        position: absolute;
+        left: -15%;
+        width: 100%;
+      }
+
+      .banner .left_section span {
+        transform: skew(-20deg);
+        position: absolute;
+        top: 30vh;
+        left: 20vw;
+        width: 50%;
+        color: #fff;
+        letter-spacing: 0.08em;
+        z-index: 11111111;
+      }
+
+      .banner .left_section span h4 {
+        line-height: 1.6em;
+        font-weight: 400 !important;
+      }
+
+      @media (max-width: 1120px) {
+        .banner {
+          background-attachment: local;
+        }
+        .banner .left_section section {
+          left: -40%;
+        }
+        .banner .left_section span {
+          left: 30vw;
+          width: 130%;
+        }
+      }
+
+      @media (max-width: 420px) {
+        .banner .left_section section {
+          left: -58%;
+        }
+        .banner .left_section span {
+          left: 45vw;
+          width: 120%;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@100;200;300;400;500;600;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="topnav" id="myTopnav">
+        <a href="#"><img class="logo" src="https://i.ibb.co/mDpmR4x/logo-icon.png" alt="" /></a>
+        <a id="active">WEBSITE.COM</a>
+        <a href="#">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Categories
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content animate">
+            <a href="#">Cubic</a>
+            <a href="#">Square</a>
+          </div>
+        </div>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#about" style="float: right; padding: 24px 2px"><i class="fa fa-search"></i></a>
+        <a href="#about" style="float: right; padding: 24px 2px"><i class="fa fa-user-circle-o"></i></a>
+        <a href="javascript:void(0);" style="font-size: 15px" class="icon" onclick="NavBar()">&#9776;</a>
+      </div>
+    </header>
+
+    <div class="banner">
+      <section class="left_section">
+        <section>
+          <span>
+            <h1 class="title">Moments are ment to be remembered</h1>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+            <a href="#Auctions" class="btn1">Get Started</a>
+          </span>
+        </section>
+      </section>
+      <section class="right-section"></section>
+    </div>
+
+    <script id="rendered-js">
+      function NavBar() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      function scrollFunction() {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+          document.getElementById("myTopnav").style.width = "100%";
+          document.getElementById("myTopnav").style.backgroundColor = "rgba(6, 18, 33, 1)";
+          document.getElementById("header").style.position = "fixed";
+          document.getElementById("header").style.top = "0%";
+        } else {
+          document.getElementById("myTopnav").style.width = "80%";
+          document.getElementById("myTopnav").style.backgroundColor = "rgba(6, 18, 33, 0.8)";
+          document.getElementById("header").style.position = "fixed";
+          document.getElementById("header").style.top = "2rem";
+        }
+      }
+    </script>
+  </body>
+</html>
