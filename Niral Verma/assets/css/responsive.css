@@ -1,0 +1,112 @@
+/*
+* ----------------------------------------------------------------------------------------
+Author       : Creativepersonal
+Template Name: Thiyan Personal Portfolio Template
+Version      : 1.0
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1280px) {}
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+    .mainmenu .navbar-nav li a {
+        padding: 30px 11px;
+        font-size: 12px;
+    }
+    .menu-bg .mainmenu .navbar-nav li a {
+        padding: 20px 11px;
+        font-size: 12px;
+    }
+    .single-project-done {
+        text-align: center;
+    }
+    .about-image img{
+        margin-top: 30px;
+    }
+    .single-contact-details{
+        text-align: center;
+    }
+    
+    .single-testimonial {
+        padding: 0;
+    }
+}
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+    .navbar-toggle .icon-bar {
+        background: #f8f8f8;
+    }
+    .menu-bg .navbar-toggle .icon-bar {
+        background: #fff;
+    }
+    .navbar-toggle {
+        margin-right: 0px;
+        margin-top: -30px;
+    }
+    .navbar {
+        min-height: 0px;
+    }
+    .mainmenu .navbar-nav li a {
+        padding: 11px 15px;
+    }
+    .mainmenu .navbar-nav li a:hover {
+        color: #0B858D;
+    }
+    .menu-bg .mainmenu .navbar-nav li a:hover {
+        color: #0B858D;
+    }
+    .menu-bg .mainmenu .navbar-nav li a {
+        padding: 11px 15px;
+    }
+    .navbar-fixed-bottom .navbar-collapse,
+    .navbar-fixed-top .navbar-collapse {
+        max-height: 420px;
+    }
+    .navbar-toggle {
+        margin-top: -30px;
+    }
+    .navbar-collapse {
+        background: rgba(0, 0, 0, .9);
+    }
+    .menu-bg .navbar-collapse {
+        background: rgba(0, 0, 0, .9);
+    }
+    .welcome-image-area,
+    .welcome-video-area {
+        padding-top: 120px;
+    }
+    .welcome-image-area h2,
+    .single-slide-item h2,
+    .welcome-video-area h2 {
+        font-size: 22px;
+    }
+    .section-title h2 {
+        font-size: 22px;
+    }
+    .about-text h2 {
+        font-size: 22px;
+    }
+    .single-testimonial {
+        padding: 0;
+    }
+    .single-project-done {
+        text-align: center;
+    }
+    .single-contact-details, .footer-area p, .actions, .footer-social-link {
+        text-align: center;
+    }
+}
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {}

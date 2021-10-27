@@ -1,0 +1,755 @@
+/*
+* ----------------------------------------------------------------------------------------
+Author       : Creativepersonal
+Template Name: Thiyan Personal Portfolio Template
+Version      : 1.0
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GLOBAL CSS STYLE
+* 02.PRELOADER & BOUNCE CCS STYLE
+* 03.HOMEPAGE CSS STYLE
+    -LOGO CSS
+    -MENU CSS
+* 04.ABOUT CSS STYLE
+* 05.SERVICE CSS STYLE
+    -SINGLE SERVICE CSS
+* 06.WORK CSS STYLE
+* 07.TESTIMONIAL CSS STYLE
+* 08.CONTACT CSS STYLE
+* 09.FOOTER CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GLOBAL STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+body {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 1px;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+    height: 100%
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    -webkit-transition: all 0.4s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+}
+
+img {
+    width: 100%;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+p {
+    line-height: 32px;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset {
+    border: 0 none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.no-padding {
+    padding: 0
+}
+
+.section-padding {
+    padding: 70px 0px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    margin-top: 0;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.section-title p {
+    font-weight: 300;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 02.PRELOADER & BOUNCE CCS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.preloader-area {
+    background: #000;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+}
+
+.double-bounce1,
+.double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.6;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 40px;
+    width: 40px;
+    margin-left: -20px;
+    margin-top: -20px;
+    -webkit-animation: sk-bounce 4.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+    0%,
+    100% {
+        -webkit-transform: scale(0.0)
+    }
+    50% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes sk-bounce {
+    0%,
+    100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    }
+    50% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 03.HOMEPAGE CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.welcome-area {
+    height: 100%;
+}
+
+.welcome-image-area {
+    position: relative;
+    height: 100%;
+    background: url(../images/bg/bg.jpg);
+    background-size: cover;
+    z-index: 1;
+}
+
+.parallax-bg {
+    background: url(../images/bg/bg1.png);
+    background-size: cover;
+}
+
+.welcome-image-area:after {
+    position: absolute;
+    background: rgba(0, 0, 0, .6);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+}
+
+.display-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.display-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.header-text h3 {
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.header-text h2 {
+    color: #fff;
+    font-size: 60px;
+    letter-spacing: 5px;
+    margin: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.header-text a{
+    display: inline-block;
+    background: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-top: 30px;
+    font-size: 12px;
+    text-transform: uppercase; 
+}
+.header-top-area {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+.logo {
+    padding-top: 28px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.logo a {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.mainmenu .navbar-nav li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 30px 15px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    font-weight: 600;
+}
+
+.mainmenu .navbar-nav li a:hover {
+    background: none;
+    color: #fff;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.nav li a:focus,
+.nav li a:hover {
+    background: none;
+    color: #fff;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.navbar {
+    margin: 0;
+}
+
+.menu-bg {
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    background: #000;
+}
+
+.menu-bg .logo {
+    padding-top: 18px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.menu-bg .mainmenu .navbar-nav li a {
+    color: #fff;
+    padding: 20px 15px;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.menu-bg .mainmenu .navbar-nav li a:hover {
+    color: #fff;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 04.ABOUT CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.about-text h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.about-text h3 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 2px 10px;
+    background: #333;
+    color: #fff;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+}
+
+.about-image h2 {
+    background: #333;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.single-project-done {
+    margin-top: 30px;
+}
+
+.single-project-done span {
+    font-size: 40px;
+}
+
+.single-project-done h2 {
+    font-size: 40px;
+}
+
+.single-project-done p {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 05.SERVICE CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.service-area {
+    background: #000;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.single-service {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.single-service span {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #f8f8f8;
+}
+
+.single-service h2 {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 20px 0px;
+    color: #fff;
+}
+
+.single-service p {
+    margin-bottom: 0;
+    color: #f8f8f8;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 06.WORK CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.social-link {
+ 
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.social-link ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.social-link ul li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.social-link ul li a {
+    display: block;
+    color: #ccc;
+}
+
+.social-link ul li a .link {
+    color: #3B5998;
+}
+
+.social-link ul li a .tw {
+    color: #55ACEE;
+}
+
+.social-link ul li a .yt {
+    color: red;
+}
+
+.social-link ul li a .ins {
+    color: #2D6B94;
+}
+
+.work {
+    background: #fff;
+}
+
+.work-inner .mix {
+    display: none;
+}
+
+ul.work {
+    padding: 0;
+    list-style: none;
+    margin-left: 8px;
+    text-align: center;
+}
+
+ul.work li {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 8px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+ul.work li:hover {
+    color: #000;
+    border: none;
+}
+
+ul.work li.active {
+    border: none;
+    color: #000;
+}
+
+.work .item {
+    margin-top: 30px;
+    position: relative;
+}
+
+.work .item img {
+    width: 100%;
+    z-index: 99999;
+}
+
+.portfolio-caption {
+    color: #333333;
+}
+
+.portfolio-caption {
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, .8);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+.portfolio-caption h4 {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #333;
+    -webkit-transition: .3s;
+    transition: .3s;
+    border: 1px solid #000;
+    padding: 10px 10px;
+    display: inline-block;
+}
+
+.work .item:hover .portfolio-caption {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+.work .item:hover .portfolio-caption h4 {
+    margin-top: 150px;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 07.TESTIMONIAL CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.testimonial-area {
+    background: #000;
+}
+
+.testimonial-list {}
+
+.single-testimonial {
+    padding: 40px 100px;
+    margin: 0px 20px;
+}
+
+.single-testimonial h2 {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 20px 0px;
+    color: #fff;
+}
+
+.single-testimonial h2 span {
+    color: #ccc;
+    text-transform: lowercase;
+    margin-left: 10px;
+}
+
+.single-testimonial p {
+    line-height: 25px;
+    color: #f8f8f8;
+}
+
+.single-testimonial i {
+    color: #f8f8f8;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 08.CONTACT CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.contact-me-area {
+    background-color: #fff;
+}
+
+.single-contact-details {
+    margin-top: 30px;
+}
+
+.single-contact-details span {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.single-contact-details h2 {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.single-contact-details p {}
+
+.contact-form {
+    border-radius: 3px;
+    margin-top: 30px;
+}
+
+.form-control {
+    display: block;
+    border: 0px;
+    width: 100%;
+    height: 45px;
+    padding: 5px 0px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: transparent;
+    background-image: none;
+    border-radius: 0px;
+    box-shadow: none;
+    border-bottom: 1px solid rgba(0, 0, 0, .5);
+    margin-bottom: 25px;
+}
+
+.form-control:focus {
+    border-color: #000;
+    outline: 0;
+    box-shadow: none;
+}
+
+.contact-form input[type='submit'] {
+    display: inline-block;
+    color: #fff;
+    background: #000;
+    padding: 10px 25px;
+    border: 2px solid rgba(0, 0, 0, .5);
+    text-transform: uppercase;
+    font-size: 12px;
+    border: 1px solid #000;
+    border-radius: 0px;
+    font-weight: 600;
+    -webkit-transition: .3s;
+    transition: .3s;
+    letter-spacing: 3px;
+}
+
+.contact-form input[type='submit']:hover {
+    background: #fff;
+    border: 1px solid #000;
+    color: #000;
+    -webkit-transition: all 0.4s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+    outline: none;
+}
+
+.success {
+    background: #50B948 none repeat scroll 0 0;
+    color: #fff;
+    font-weight: 700;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 09.FOOTER CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.footer-area {
+    background: #000;
+    padding: 30px 0px;
+}
+
+.footer-area p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer-social-link {
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.footer-social-link ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer-social-link ul li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.footer-social-link ul li a {
+    display: block;
+    color: #ccc;
+}
+
+.footer-social-link ul li a .link {
+    color: blue;
+}
+
+.footer-social-link ul li a .tw {
+    color: #55ACEE;
+}
+
+.footer-social-link ul li a .yt {
+    color: red;
+}
+
+.footer-social-link ul li a .ins {
+    color: palevioletred;
+}
