@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --text-color: #00aa00;
+}
+
+body {
+  font-family: "Source Code Pro", monospace;
+  background-color: #333;
+  color: #ccc;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+h1 {
+  color: var(--text-color);
+  font-size: 50px;
+  letter-spacing: -5px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: var(--text-color);
+}
+
+h3 {
+  font-family: "Source Code Pro", monospace;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: var(--text-color);
+  font-family: "Source Code Pro", monospace;
+  text-decoration: none;
+}
+
+p {
+  margin: 20px 0;
+}
+
+nav {
+  width: 50%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul li {
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cursor {
+  font-weight: 700;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+
+  50% {
+    color: var(--text-color);
+  }
+}
