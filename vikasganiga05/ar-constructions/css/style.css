@@ -1,0 +1,2308 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Start of Header Section */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 100px;
+  background: #000;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+header .logo,
+.footer .logo {
+  color: #f9b808;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  float: left;
+  font-weight: bold;
+}
+
+span.white-txt {
+  color: #fff;
+  margin-left: 5px;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  transition: color 300ms ease-out;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  color: #f9b808;
+}
+
+/* Responsive Menu-Bar */
+
+#menu-wrapper {
+  position: absolute;
+  top: 12.5px;
+  right: 20px;
+}
+
+#responsive-menu {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  cursor: pointer;
+  display: none;
+}
+
+.line {
+  background: #fff;
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+  position: absolute;
+  transition: all 200ms ease;
+}
+
+.line-1 {
+  top: 4px;
+}
+
+.line-2 {
+  top: 13.5px;
+}
+
+.line-3 {
+  bottom: 0;
+}
+
+.menu.close .line-1 {
+  transform: rotate(45deg);
+  transform-origin: left;
+}
+
+.menu.close .line-2 {
+  display: none;
+}
+
+.menu.close .line-3 {
+  transform: rotate(-45deg);
+  transform-origin: left;
+  bottom: 0;
+}
+
+/* End of Header Section */
+
+/* Start of Showcase Section */
+#showcase-home,
+#showcase-about,
+#showcase-services,
+#showcase-projects,
+#showcase-contact,
+#showcase-management,
+#showcase-project-1,
+#showcase-project-2,
+#showcase-project-3,
+#showcase-project-4,
+#showcase-project-5,
+#showcase-project-6,
+#showcase-project-7,
+#showcase-project-8 {
+  height: calc(100vh - 50px);
+  margin-top: 50px;
+  position: relative;
+  background: url('../img/home-showcase.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#showcase-home::before,
+#showcase-about::before,
+#showcase-services::before,
+#showcase-projects::before,
+#showcase-contact::before,
+#showcase-management::before,
+#showcase-project-1:before,
+#showcase-project-2:before,
+#showcase-project-3:before,
+#showcase-project-4:before,
+#showcase-project-5:before,
+#showcase-project-6:before,
+#showcase-project-7:before,
+#showcase-project-8:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#showcase-about {
+  background: url('../img/about-showcase.jpg');
+}
+
+#showcase-services {
+  background: url('../img/services-showcase.jpg');
+}
+
+#showcase-projects {
+  background: url('../img/projects-showcase.jpg');
+}
+
+#showcase-contact {
+  background: url('../img/map.jpg');
+}
+
+#showcase-management {
+  background: url('../img/map.jpg');
+}
+
+#showcase-project-1 {
+  background: url('../img/project-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#showcase-project-1 i,
+#showcase-project-2 i,
+#showcase-project-3 i,
+#showcase-project-4 i,
+#showcase-project-5 i,
+#showcase-project-6 i,
+#showcase-project-7 i,
+#showcase-project-8 i,
+#showcase-management i {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 1.5em;
+  color: #000;
+  padding: 0.4em 0.55em;
+  background: #f9b808;
+  border-radius: 50px;
+  cursor: pointer;
+  animation: bounce 1s linear infinite;
+}
+
+#showcase-project-1 i:hover,
+#showcase-project-2 i:hover,
+#showcase-project-3 i:hover,
+#showcase-project-4 i:hover,
+#showcase-project-5 i:hover,
+#showcase-project-6 i:hover,
+#showcase-project-7 i:hover,
+#showcase-project-8 i:hover,
+#showcase-management i:hover {
+  background: #000;
+  color: #f9b808;
+  box-shadow: 0px 0px 1px 1px #f9b808;
+  animation: none;
+}
+
+#showcase-project-2 {
+  background: url('../img/project-2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#showcase-project-3 {
+  background: url('../img/project-3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#showcase-project-4 {
+  background: url('../img/project-4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#showcase-project-5 {
+  background: url('../img/project-5.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#showcase-project-6 {
+  background: url('../img/project-6.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#showcase-project-7 {
+  background: url('../img/project-7.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#showcase-project-8 {
+  background: url('../img/project-8.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#showcase-home h1,
+#showcase-home h2,
+#showcase-home a,
+#showcase-about h1,
+#showcase-about h2,
+#showcase-about a,
+#showcase-services h1,
+#showcase-services h2,
+#showcase-services a,
+#showcase-projects h1,
+#showcase-projects h2,
+#showcase-projects a,
+#showcase-contact h1,
+#showcase-contact h2,
+#showcase-contact a,
+#showcase-project-1 h1,
+#showcase-project-2 h1,
+#showcase-project-3 h1,
+#showcase-project-4 h1,
+#showcase-project-5 h1,
+#showcase-project-6 h1,
+#showcase-project-7 h1,
+#showcase-project-8 h1,
+#showcase-management h1 {
+  color: #fff;
+  z-index: 1;
+}
+
+#showcase-home h1,
+#showcase-about h1,
+#showcase-services h1,
+#showcase-projects h1,
+#showcase-contact h1,
+#showcase-project-1 h1,
+#showcase-project-2 h1,
+#showcase-project-3 h1,
+#showcase-project-4 h1,
+#showcase-project-5 h1,
+#showcase-project-6 h1,
+#showcase-project-7 h1,
+#showcase-project-8 h1,
+#showcase-management h1 {
+  font-size: 5rem;
+  margin: 0;
+  position: relative;
+}
+
+#showcase-home h1::before,
+#showcase-about h1::before,
+#showcase-services h1::before,
+#showcase-projects h1::before,
+#showcase-contact h1::before,
+#showcase-project-1 h1::before,
+#showcase-project-2 h1::before,
+#showcase-project-3 h1::before,
+#showcase-project-4 h1::before,
+#showcase-project-5 h1::before,
+#showcase-project-6 h1::before,
+#showcase-project-7 h1::before,
+#showcase-project-8 h1::before,
+#showcase-management h1::before {
+  content: "";
+  background: #f9b808;
+  position: absolute;
+  top: -40%;
+  left: 42.5%;
+  width: 15%;
+  height: 10%;
+}
+
+#showcase-home h2,
+#showcase-about h2,
+#showcase-services h2,
+#showcase-projects h2,
+#showcase-contact h2 {
+  width: 60%;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: initial;
+}
+
+#showcase-home a.btn,
+#showcase-about a.btn,
+#showcase-services a.btn,
+#showcase-projects a.btn,
+#showcase-contact a.btn,
+.our-history a,
+.services a,
+.projects a {
+  background: #f9b808;
+  padding: 1rem 1.5rem;
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: all 300ms ease-out;
+}
+
+#showcase-home a:hover,
+#showcase-about a:hover,
+#showcase-services a:hover,
+#showcase-projects a:hover,
+#showcase-contact a:hover,
+.our-history a:hover,
+.services a:hover,
+.projects a:hover {
+  background: #000;
+  color: #f9b808;
+}
+
+/* End of Showcase Section */
+
+#container {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+h1.lead {
+  text-align: center;
+  position: relative;
+}
+
+h1.lead::before {
+  content: "";
+  background: #f9b808;
+  width: 4%;
+  height: 5px;
+  position: absolute;
+  top: -50%;
+  left: 48%;
+}
+
+/* Start of Our-Services Section */
+.icons {
+  width: 125px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.icons img {
+  opacity: 1;
+  width: 100%;
+}
+
+.img-1 {
+  transition: all 500ms ease-out;
+}
+
+.img-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.icons:hover .img-1 {
+  opacity: 0;
+}
+
+.our-service {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+  margin-top: 50px;
+}
+
+.our-service h2,
+.about-us h2 {
+  text-align: center;
+  color: #212121;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.our-service p,
+.about-us p {
+  width: 80%;
+  margin: 16px auto;
+  text-align: justify;
+  color: #444;
+  line-height: 1.6;
+}
+
+.service-one,
+.service-two,
+.service-three,
+.service-four,
+.service-five,
+.service-six,
+.about-one,
+.about-two,
+.about-three,
+.about-four {
+  box-shadow: 0px 0px 10px 5px rgba(119, 119, 119, 0.75);
+  padding-top: 16px;
+}
+
+/* End of Our-Services Section */
+
+/* Start of Our-History Section */
+.our-history {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 70px;
+  margin-top: 70px;
+}
+
+.our-history img {
+  width: 100%;
+}
+
+.our-history h1,
+.services h1,
+.contact-us h1 {
+  position: relative;
+  font-size: 30px;
+}
+
+.our-history h1::before,
+.services h1::before {
+  content: "";
+  background: #f9b808;
+  width: 10%;
+  height: 5px;
+  position: absolute;
+  top: -24.9px;
+  left: 0;
+}
+
+.our-history h2,
+.services h2,
+.management h2 {
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #212121;
+  margin: 30px 0;
+}
+
+.our-history p,
+.services p,
+.management p {
+  font-size: 18px;
+  color: #444;
+  text-align: justify;
+  margin: 18px 0 50px 0;
+  line-height: 1.6;
+}
+
+/* End of Our-History Section */
+
+/* Start of Projects-shortcuts Section */
+.project-shortcut {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-top: 70px;
+  clear: both;
+}
+
+.project-shortcut img {
+  width: 100%;
+  height: 100%;
+}
+
+.shortcut {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.shortcut:hover .content {
+  opacity: 1;
+}
+
+.shortcut:hover .content h2,
+.shortcut:hover .content a {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.content {
+  background: rgba(0, 0, 0, 0.85);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 500ms ease-out;
+}
+
+.content h2 {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #fff;
+  font-weight: normal;
+  opacity: 0;
+  transform: translateY(30%);
+  transition: all 300ms ease-out;
+  transition-delay: 500ms;
+}
+
+.content a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  opacity: 0;
+  transform: translateY(30%);
+  transition: all 300ms ease-out;
+  transition-delay: 800ms;
+  position: relative;
+}
+
+.content a::after {
+  content: "";
+  width: 20%;
+  height: 2px;
+  background: #f9b808;
+  position: absolute;
+  bottom: -5px;
+  left: 40%;
+  transition: all 300ms ease-out;
+}
+
+.content a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* End of Projects-shortcuts Section */
+
+/* Start of Footer Section */
+.footer {
+  background: #212121;
+  margin-top: 70px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.footer .logo {
+  float: none;
+  font-weight: normal;
+  padding-left: 24px;
+}
+
+.info p {
+  color: #555;
+  text-align: justify;
+  padding-left: 24px;
+}
+
+.footer h3 {
+  font-weight: normal;
+  color: #fff;
+}
+
+.navigation ul,
+.contact ul {
+  padding-left: 24px;
+  list-style: none;
+}
+
+.navigation h3,
+.contact h3 {
+  padding-left: 24px;
+}
+
+.navigation ul li {
+  margin-bottom: 20px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #f9b808;
+}
+
+.faq h4 {
+  color: #aaa;
+}
+
+.faq p {
+  color: #555;
+}
+
+.contact p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.spacing {
+  margin-left: 72px;
+}
+
+.highlight a {
+  color: #f9b808;
+  text-decoration: none;
+}
+
+footer {
+  background: #000;
+  display: flex;
+}
+
+footer p {
+  margin-left: 150px;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+footer p,
+footer i {
+  color: #fff;
+}
+
+footer i {
+  font-size: 26px;
+  margin-top: 16px;
+  margin-right: 14px;
+  transition: all 300ms ease-out;
+}
+
+footer i:hover {
+  color: #f9b808;
+}
+
+.column-1 {
+  width: 60%;
+}
+
+.column-2 {
+  width: 40%;
+  text-align: center;
+}
+
+/* End of Footer Section */
+
+/* Start of About Section */
+.about-us {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+}
+
+.about-us .icons {
+  width: 150px;
+}
+
+.about-us h2 {
+  font-size: 30px;
+}
+
+.about-us p {
+  font-size: 18px;
+}
+
+.count-downs {
+  background: #212121;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 70px;
+  width: 100%;
+  height: 20vh;
+}
+
+.parts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.parts h1 {
+  margin: 0;
+  color: #f9b808;
+  font-size: 60px;
+}
+
+.parts h3 {
+  margin: 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.our-team {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  margin-top: 50px;
+}
+
+.our-team img {
+  width: 100%;
+}
+
+.team {
+  padding: 10px;
+  box-shadow: 0px 0px 10px 5px rgba(119, 119, 119, 0.75);
+}
+
+.team h2 {
+  text-align: center;
+  color: #212121;
+  margin: 30px 0 0 0;
+  font-weight: normal;
+}
+
+.team .highlight {
+  color: #d69c03;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.team .paragraph {
+  text-align: justify;
+  color: #444;
+}
+
+/* End of About Section */
+
+/* Start of Services Section */
+.services img {
+  width: 100%;
+}
+
+.service-1 .service,
+.service-3 .service,
+.service-5 .service {
+  width: 49%;
+  height: 500px;
+  float: right;
+  margin-top: 70px;
+}
+
+.service-1 .service {
+  margin-top: 0;
+}
+
+.service-1 .txt,
+.service-3 .txt,
+.service-5 .txt {
+  margin-right: 2%;
+}
+
+.service-2 .service,
+.service-4 .service,
+.service-6 .service {
+  width: 49%;
+  height: 500px;
+  float: left;
+  margin-top: 70px;
+}
+
+.service-2 .img,
+.service-4 .img,
+.service-6 .img {
+  margin-right: 2%;
+}
+
+.service-6 .service {
+  margin-bottom: 70px;
+}
+
+/* End of Services Section */
+
+/* Start of Projects Section */
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 150px;
+  grid-row-gap: 100px;
+}
+
+.projects img {
+  width: 100%;
+}
+
+.center {
+  width: 100%;
+  text-align: center;
+}
+
+.projects h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #212121;
+  font-weight: normal;
+}
+
+.projects p {
+  color: #444;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+/* End of Projects Section */
+
+/* Start of Contact Section */
+.contact-us {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+
+.contact-us h1 {
+  position: relative;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.contact-us h1::before {
+  content: "";
+  background: #f9b808;
+  width: 10%;
+  height: 5px;
+  position: absolute;
+  top: -20.1px;
+  left: 0;
+}
+
+.contact-us ul {
+  padding: 0;
+}
+
+.contact-us ul li {
+  list-style: none;
+  font-size: 20px;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.bold {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  color: #212121;
+}
+
+.contact-us i {
+  font-size: 30px;
+  margin-top: 16px;
+  margin-right: 14px;
+  color: #000;
+  transition: color 300ms ease-out;
+}
+
+.contact-us i:hover {
+  color: #f9b808;
+}
+
+input {
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background: #ccc;
+  padding: 10px;
+  width: 70%;
+  margin-bottom: 30px;
+  border: 0;
+  outline: none;
+}
+
+textarea {
+  height: 100px;
+}
+
+textarea::placeholder {
+  font-family: helvetica;
+}
+
+input[type="submit"] {
+  background: #f9b808;
+  padding: 0.8rem 1.5rem;
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+  transition: all 300ms ease-out;
+}
+
+input[type="submit"]:hover {
+  background: #000;
+  color: #f9b808;
+}
+
+.contact-details,
+.get-in-touch {
+  padding-left: 70px;
+}
+
+/* End of Contact Section */
+/* Start of Scroll-Down Indicator Section */
+.scroll-down {
+  position: absolute;
+  bottom: 70px;
+}
+
+.scroll-down span {
+  width: 20px;
+  height: 20px;
+  display: block;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+
+.scroll-down span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.scroll-down span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+/* End of Scroll-Down Indicator Section */
+
+/* Start of Project-Read-More Section */
+.container {
+  position: relative;
+}
+
+.container::before {
+  content: "";
+  background: #f9b808;
+  width: 5%;
+  height: 4px;
+  position: absolute;
+  top: 70px;
+  left: 0;
+
+}
+
+.information,
+.management {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 70px;
+}
+
+.information p {
+  font-size: 18px;
+  text-align: justify;
+  color: #444;
+  line-height: 1.6;
+}
+
+.information span {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: #212121;
+}
+
+#showcase-management h1 {
+  width: 70%;
+  text-align: center;
+}
+
+#showcase-management h1::before {
+  width: 10%;
+  height: 5%;
+  top: -20%;
+  left: 45%;
+}
+
+.management img {
+  width: 100%;
+}
+
+#info {
+  background: #d69c03;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+#info h2 {
+  text-transform: uppercase;
+  width: 40%;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+#info h2::before {
+  content: "";
+  background: #fff;
+  width: 10%;
+  height: 4px;
+  position: absolute;
+  top: -20px;
+  left: 45%;
+}
+
+#info a {
+  background: #fff;
+  padding: 1rem 1.5rem;
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: all 300ms ease-out;
+}
+
+#info a:hover {
+  background: #000;
+  color: #fff;
+}
+
+.contact-details ul li a {
+  color: #d69c03;
+  text-decoration: none;
+}
+
+.related-projects {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-top: 70px;
+}
+
+.rp {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #000;
+  overflow: hidden;
+}
+
+.rp img {
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}
+
+.image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+
+.rp-1 .image span,
+.rp-2 .image span,
+.rp-3 .image span,
+.rp-4 .image span,
+.rp-5 .image span,
+.rp-6 .image span,
+.rp-7 .image span,
+.rp-8 .image span {
+  width: 25%;
+  height: 100%;
+  background: url('../img/RP-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 500ms ease-out;
+}
+
+.rp-2 .image span {
+  background: url('../img/RP-2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rp-3 .image span {
+  background: url('../img/RP-3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rp-4 .image span {
+  background: url('../img/RP-4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rp-5 .image span {
+  background: url('../img/RP-5.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rp-6 .image span {
+  background: url('../img/RP-6.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rp-7 .image span {
+  background: url('../img/RP-7.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rp-8 .image span {
+  background: url('../img/RP-8.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rp-1 .image span:nth-child(1),
+.rp-2 .image span:nth-child(1),
+.rp-3 .image span:nth-child(1),
+.rp-4 .image span:nth-child(1),
+.rp-5 .image span:nth-child(1),
+.rp-6 .image span:nth-child(1),
+.rp-7 .image span:nth-child(1),
+.rp-8 .image span:nth-child(1) {
+  background-position: 0%;
+  transition-delay: 0s;
+}
+
+.rp-1 .image span:nth-child(2),
+.rp-2 .image span:nth-child(2),
+.rp-3 .image span:nth-child(2),
+.rp-4 .image span:nth-child(2),
+.rp-5 .image span:nth-child(2),
+.rp-6 .image span:nth-child(2),
+.rp-7 .image span:nth-child(2),
+.rp-8 .image span:nth-child(2) {
+  background-position: 33.33%;
+  transition-delay: 0.1s;
+}
+
+.rp-1 .image span:nth-child(3),
+.rp-2 .image span:nth-child(3),
+.rp-3 .image span:nth-child(3),
+.rp-4 .image span:nth-child(3),
+.rp-5 .image span:nth-child(3),
+.rp-6 .image span:nth-child(3),
+.rp-7 .image span:nth-child(3),
+.rp-8 .image span:nth-child(3) {
+  background-position: 66.66%;
+  transition-delay: 0.2s;
+}
+
+.rp-1 .image span:nth-child(4),
+.rp-2 .image span:nth-child(4),
+.rp-3 .image span:nth-child(4),
+.rp-4 .image span:nth-child(4),
+.rp-5 .image span:nth-child(4),
+.rp-6 .image span:nth-child(4),
+.rp-7 .image span:nth-child(4),
+.rp-8 .image span:nth-child(4) {
+  background-position: 99.99%;
+  transition-delay: 0.3s;
+}
+
+.rp:hover .image span {
+  transform: translateY(-100%);
+}
+
+.rp:hover .rp-content {
+  transition-delay: 500ms;
+  transform: translateY(0%);
+}
+
+.rp-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(100%);
+  transition: all 500ms ease-out;
+}
+
+.rp-content h1 {
+  color: #f9b808;
+  width: 100%;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: normal;
+}
+
+.rp-content p {
+  color: #fff;
+  width: 100%;
+  font-size: 0.7em;
+  text-align: center;
+  width: 90%;
+  letter-spacing: 1px;
+}
+
+/* End of Project-Read-More Section */
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  75% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Media Query For Responsive Design */
+
+/* Media Query For Screen Width 1200px and Below */
+@media only screen and (max-width: 1200px) {
+
+  #showcase-home h1,
+  #showcase-about h1,
+  #showcase-services h1,
+  #showcase-projects h1,
+  #showcase-contact h1,
+  #showcase-management h1,
+  #showcase-project-1 h1,
+  #showcase-project-2 h1,
+  #showcase-project-3 h1,
+  #showcase-project-4 h1,
+  #showcase-project-5 h1,
+  #showcase-project-6 h1,
+  #showcase-project-7 h1,
+  #showcase-project-8 h1 {
+    font-size: 4rem;
+  }
+
+  #showcase-home h2,
+  #showcase-about h2,
+  #showcase-services h2,
+  #showcase-projects h2,
+  #showcase-contact h2 {
+    font-size: 24px;
+  }
+
+  #showcase-home a.btn,
+  #showcase-about a.btn,
+  #showcase-services a.btn,
+  #showcase-projects a.btn,
+  #showcase-contact a.btn {
+    font-size: 12px;
+  }
+
+  header {
+    padding: 0 50px;
+  }
+
+  h1.lead {
+    font-size: 28px;
+  }
+
+  .our-service h2,
+  .our-history h2,
+  .footer .logo,
+  footer i,
+  .team h2,
+  .bold,
+  .management h2 {
+    font-size: 20px;
+  }
+
+  .our-service p,
+  .info p,
+  .navigation ul li,
+  .contact p,
+  .team .highlight,
+  .team .paragraph {
+    font-size: 14px;
+  }
+
+  .icons {
+    width: 100px;
+  }
+
+  .our-history h1,
+  .services h1,
+  .projects h1,
+  .contact-us h1,
+  .information span {
+    font-size: 26px;
+  }
+
+  .our-history h2,
+  .faq h4,
+  .services h2 {
+    margin: 0;
+  }
+
+  .our-history p {
+    font-size: 16px;
+    margin: 10px 0 30px 0;
+  }
+
+  .our-history a {
+    font-size: 12px;
+  }
+
+  .content h2,
+  .about-us p,
+  .information p {
+    font-size: 16px;
+  }
+
+  .content a,
+  .services a,
+  .projects a,
+  input[type="submit"],
+  #info a {
+    font-size: 12px;
+  }
+
+  .footer {
+    padding: 10px;
+  }
+
+  .footer h3,
+  footer p,
+  .services h2,
+  .contact-us ul li {
+    font-size: 18px;
+  }
+
+  .faq p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .spacing {
+    margin-left: 65px;
+  }
+
+  .about-us .icons {
+    width: 125px;
+  }
+
+  .about-us h2 {
+    font-size: 24px;
+  }
+
+  #showcase-services h2 {
+    width: 80%;
+  }
+
+  .services h1 {
+    margin-bottom: 12px;
+  }
+
+  .services p,
+  .projects p {
+    font-size: 15px;
+    margin: 10px 0 30px 0;
+  }
+
+  .our-history h1::before,
+  .services h1::before {
+    top: -21.58px;
+  }
+
+  .service-1 .service,
+  .service-3 .service,
+  .service-5 .service,
+  .service-2 .service,
+  .service-4 .service,
+  .service-6 .service {
+    height: 400px;
+  }
+
+  .projects {
+    grid-column-gap: 100px;
+    grid-row-gap: 70px;
+  }
+
+  .projects h1 {
+    margin-bottom: 0;
+  }
+
+  .contact-details {
+    padding-left: 50px;
+  }
+
+  .get-in-touch {
+    padding-left: 90px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 80%;
+  }
+
+  .management h2 {
+    margin: 20px 0 10px 0;
+  }
+
+  .management p {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  #info h2 {
+    width: 60%;
+  }
+
+  .information span {
+    letter-spacing: 2px;
+  }
+
+  .contact p span.spacing[style] {
+    margin-left: 53px !important;
+  }
+
+  .contact p span.highlight[style] {
+    margin-left: 52px !important;
+  }
+
+  .rp-content h1 {
+    font-size: 0.8em;
+  }
+
+  .rp-content p {
+    font-size: 0.55em;
+  }
+}
+
+/* Media Query For Screen Width 1024px and Below */
+@media only screen and (max-width: 1024px) {
+  header {
+    padding: 0 20px;
+  }
+
+  header .logo {
+    font-size: 21px;
+  }
+
+  header nav ul li,
+  .our-history p,
+  .content h2,
+  .faq h4,
+  .about-us p,
+  .parts h3,
+  .management p {
+    font-size: 14px;
+  }
+
+  #showcase-home h1,
+  #showcase-about h1,
+  #showcase-services h1,
+  #showcase-projects h1,
+  #showcase-contact h1,
+  #showcase-project-1 h1,
+  #showcase-project-2 h1,
+  #showcase-project-3 h1,
+  #showcase-project-4 h1,
+  #showcase-project-5 h1,
+  #showcase-project-6 h1,
+  #showcase-project-7 h1,
+  #showcase-project-8 h1,
+  #showcase-management h1 {
+    font-size: 3rem;
+  }
+
+  #showcase-home h2,
+  #showcase-about h2,
+  #showcase-services h2,
+  #showcase-projects h2,
+  #showcase-contact h2 {
+    font-size: 20px;
+  }
+
+  #showcase-home a.btn span,
+  #showcase-about a.btn span,
+  #showcase-services a.btn span {
+    display: none;
+  }
+
+  h1.lead {
+    font-size: 26px;
+  }
+
+  .icons {
+    width: 90px;
+  }
+
+  .our-service h2,
+  .services h2,
+  .contact-us ul li {
+    font-size: 16px;
+  }
+
+  .our-service p {
+    font-size: 13px;
+  }
+
+  .our-history h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .our-history h2,
+  .footer .logo,
+  .team h2,
+  .bold,
+  .management h2 {
+    font-size: 18px;
+  }
+
+  .our-history a,
+  .content a,
+  .services a,
+  .projects a {
+    font-size: 11px;
+  }
+
+  .our-history h1::before {
+    top: -19.92px;
+  }
+
+  .footer {
+    grid-gap: 20px;
+  }
+
+  .footer h3 {
+    font-size: 15px;
+  }
+
+  .info p {
+    font-size: 12px;
+    margin-top: 0;
+    line-height: 1.3;
+  }
+
+  .navigation h3,
+  .contact h3,
+  .navigation ul,
+  .contact ul {
+    padding-left: 0;
+  }
+
+  .navigation ul li,
+  .contact p,
+  .faq p,
+  .team .highlight,
+  .services p {
+    font-size: 12px;
+  }
+
+  .contact p span.highlight[style],
+  .contact p span.spacing[style] {
+    margin-left: 45px !important;
+  }
+
+  .spacing {
+    margin-left: 55px;
+  }
+
+  .navigation h3,
+  .navigation ul {
+    padding-left: 15px;
+  }
+
+  .scroll-down span {
+    width: 18px;
+    height: 18px;
+  }
+
+  #showcase-about h2 {
+    width: 70%;
+  }
+
+  #showcase-services h2 {
+    width: 85%;
+  }
+
+  #showcase-contact h2 {
+    width: 70%;
+  }
+
+  .about-us .icons {
+    width: 100px;
+  }
+
+  .about-us h2,
+  .projects h1,
+  .information span {
+    font-size: 20px;
+  }
+
+  .parts h1 {
+    font-size: 50px;
+  }
+
+  .team .paragraph {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  footer p {
+    margin-left: 100px;
+  }
+
+  .services h1,
+  .contact-us h1 {
+    font-size: 24px;
+  }
+
+  .service-1 .service,
+  .service-3 .service,
+  .service-5 .service,
+  .service-2 .service,
+  .service-4 .service,
+  .service-6 .service {
+    height: 350px;
+  }
+
+  .services h1::before {
+    top: -19.92px;
+  }
+
+  .services p,
+  .projects p {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+
+  .projects {
+    grid-column-gap: 70px;
+  }
+
+  .contact-details {
+    padding-left: 20px;
+  }
+
+  .get-in-touch {
+    padding-left: 30px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 90%;
+  }
+
+  .information p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  #showcase-project-1 i,
+  #showcase-project-2 i,
+  #showcase-project-3 i,
+  #showcase-project-4 i,
+  #showcase-project-5 i,
+  #showcase-project-6 i,
+  #showcase-project-7 i,
+  #showcase-project-8 i,
+  #showcase-management i {
+    top: 20px;
+    right: 20px;
+    font-size: 1.3em;
+  }
+
+  .rp-content p {
+    font-size: 0.5em;
+  }
+}
+
+/* Media Query For Screen Width 768px and Below */
+@media only screen and (max-width: 768px) {
+  header {
+    border-bottom: 1px solid rgba(119, 119, 119, 0.75);
+  }
+
+  #responsive-menu {
+    display: block;
+  }
+
+  header nav ul {
+    display: block;
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 50%;
+    background: #000;
+    text-align: center;
+    height: 100vh;
+  }
+
+  .hide {
+    transform: translateX(100%);
+    transition: transform 300ms ease-out;
+  }
+
+  .show {
+    transform: translateX(0);
+  }
+
+  header .logo {
+    font-size: 24px;
+  }
+
+  header nav ul li a:hover,
+  header nav ul li a.active {
+    background: #f9b808;
+    color: #fff;
+  }
+
+  #showcase-home h2 {
+    width: 80%;
+  }
+
+  #showcase-about h2,
+  #showcase-projects h2,
+  #showcase-contact h2 {
+    width: 100%;
+  }
+
+  #showcase-about h1:before {
+    width: 25%;
+    left: 37.5%;
+  }
+
+  .our-service,
+  .project-shortcut,
+  .footer,
+  .our-team,
+  .related-projects {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  h1.lead,
+  .contact-us i {
+    font-size: 1.5em;
+  }
+
+  h1.lead::before,
+  #info h2::before {
+    width: 8%;
+    left: 46%;
+  }
+
+  .our-service h2,
+  .our-history h1,
+  .content h2,
+  .footer h3,
+  .about-us h2,
+  .services h1,
+  .projects h1,
+  .bold,
+  .information span {
+    font-size: 1em;
+  }
+
+  .our-service p,
+  .content a,
+  .about-us p,
+  .management p {
+    font-size: 0.7em;
+  }
+
+  .our-history h2,
+  .info p,
+  .navigation ul li,
+  .contact p,
+  .faq p,
+  .team .highlight,
+  .parts h3,
+  .services h2,
+  .projects p,
+  .information p {
+    font-size: 0.8em;
+  }
+
+  .our-history p,
+  .services p {
+    font-size: 0.7em;
+    margin: 10px 0 1em 0;
+  }
+
+  .our-history a,
+  .services a,
+  .projects a,
+  input[type="submit"],
+  #info a {
+    font-size: 0.6em;
+    padding: 1em;
+    letter-spacing: 1px;
+  }
+
+  .our-history h1::before,
+  .services h1::before {
+    top: -13.28px;
+  }
+
+  .services h1::before {
+    height: 4px;
+  }
+
+  .footer {
+    grid-column-gap: 50px;
+    grid-row-gap: 20px;
+  }
+
+  .footer .logo {
+    font-size: 1.4em;
+  }
+
+  .footer h3,
+  .faq-1,
+  .faq-2,
+  .faq-3,
+  .contact ul,
+  .navigation ul {
+    padding-left: 24px;
+  }
+
+  .spacing {
+    margin-left: 60px;
+  }
+
+  .contact p span.highlight[style],
+  .contact p span.spacing[style] {
+    margin-left: 48px !important;
+  }
+
+  footer p {
+    font-size: 1em;
+    margin-left: 50px;
+  }
+
+  .about-us .icons {
+    width: 90px;
+  }
+
+  .parts h1 {
+    font-size: 2.5em;
+  }
+
+  h1#lead::before {
+    width: 5%;
+    left: 47.5%;
+  }
+
+  #showcase-services h2 {
+    font-size: 1em;
+    width: 95%;
+  }
+
+  .service-1 .service,
+  .service-3 .service,
+  .service-5 .service,
+  .service-2 .service,
+  .service-4 .service,
+  .service-6 .service {
+    height: 260px;
+  }
+
+  .contact-us h1 {
+    font-size: 1.3em;
+  }
+
+  .contact-us ul li,
+  .management h2 {
+    font-size: 0.9em;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 0.5em;
+  }
+
+  input[type="text"]::placeholder,
+  input[type="email"]::placeholder,
+  textarea::placeholder {
+    font-size: 0.8em;
+    letter-spacing: 1px;
+  }
+
+  .contact-us h1::before {
+    height: 4px;
+    top: -13.936px;
+  }
+
+  #info h2 {
+    width: 95%;
+    font-size: 1.3em;
+  }
+
+  #showcase-project-1 i,
+  #showcase-project-2 i,
+  #showcase-project-3 i,
+  #showcase-project-4 i,
+  #showcase-project-5 i,
+  #showcase-project-6 i,
+  #showcase-project-7 i,
+  #showcase-project-8 i,
+  #showcase-management i {
+    top: 15px;
+    right: 15px;
+    font-size: 1.2em;
+  }
+
+  .rp-content h1 {
+    font-size: 1em;
+  }
+
+  .rp-content p {
+    font-size: 0.6em;
+  }
+}
+
+/* Media Query For Screen Width 320px and Below */
+@media only screen and (max-width: 360px) {
+  header {
+    padding: 0 10px;
+  }
+
+  header .logo {
+    font-size: 1.3em;
+  }
+
+  #menu-wrapper {
+    right: 10px;
+    top: 10.5px;
+  }
+
+  #showcase-home h1,
+  #showcase-about h1,
+  #showcase-services h1,
+  #showcase-projects h1,
+  #showcase-contact h1,
+  #showcase-project-1 h1,
+  #showcase-project-2 h1,
+  #showcase-project-3 h1,
+  #showcase-project-4 h1,
+  #showcase-project-5 h1,
+  #showcase-project-6 h1,
+  #showcase-project-7 h1,
+  #showcase-project-8 h1,
+  #showcase-management h1 {
+    font-size: 1.8em;
+  }
+
+  #showcase-home h2,
+  #showcase-about h2,
+  #showcase-services h2,
+  #showcase-projects h2,
+  #showcase-contact h2 {
+    font-size: 0.7em;
+    width: 100%;
+  }
+
+  #showcase-home a.btn,
+  #showcase-about a.btn,
+  #showcase-services a.btn,
+  #showcase-projects a.btn,
+  #showcase-contact a.btn {
+    font-size: 0.6em;
+    padding: 1em;
+    letter-spacing: 1px;
+  }
+
+  #showcase-about,
+  #showcase-services,
+  #showcase-projects {
+    background-position: center;
+  }
+
+  .scroll-down span {
+    width: 15px;
+    height: 15px;
+  }
+
+  h1.lead {
+    font-size: 1.5em;
+  }
+
+  h1.lead::before {
+    top: -10.72px;
+    height: 4px;
+  }
+
+  h1#lead::before {
+    width: 8%;
+    left: 46%;
+  }
+
+  .our-service,
+  .our-history,
+  .project-shortcut,
+  .footer,
+  .about-us,
+  .our-team,
+  .count-downs,
+  .projects,
+  .information,
+  .management,
+  .contact-us,
+  .related-projects {
+    grid-template-columns: 1fr;
+  }
+
+  .icons,
+  .about-us .icons {
+    width: 70px;
+  }
+
+  .our-history h1::before {
+    height: 4px;
+  }
+
+  .our-history p,
+  .services p,
+  .projects p {
+    margin: 10px 0 1.5em 0;
+  }
+
+  .our-history,
+  .about-us {
+    grid-gap: 50px;
+  }
+
+  .footer h3,
+  .faq-1,
+  .faq-2,
+  .faq-3,
+  .contact ul,
+  .navigation ul,
+  .footer .logo,
+  .info p {
+    padding-left: 0;
+  }
+
+  .footer .logo {
+    font-size: 1.2em;
+  }
+
+  .info p,
+  .navigation ul li,
+  .contact p,
+  .faq p {
+    font-size: 0.7em;
+  }
+
+  .footer h3 {
+    font-size: 0.9em;
+  }
+
+  .faq h4 {
+    font-size: 0.8em;
+  }
+
+  .footer {
+    padding: 5px 15px;
+  }
+
+  .contact p span.highlight[style],
+  .contact p span.spacing[style] {
+    margin-left: 42px !important;
+  }
+
+  .spacing {
+    margin-left: 50px;
+  }
+
+  footer {
+    background: #000;
+    display: block;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .column-1,
+  .column-2 {
+    width: 100%;
+  }
+
+  footer p {
+    margin: 0;
+    font-size: 0.9em;
+  }
+
+  footer i {
+    font-size: 1em;
+  }
+
+  header nav ul li,
+  .information p {
+    font-size: 0.7em;
+  }
+
+  .count-downs {
+    height: auto;
+    padding: 30px;
+    box-sizing: border-box;
+    grid-gap: 30px;
+  }
+
+  .service-1 .service,
+  .service-3 .service,
+  .service-5 .service,
+  .service-2 .service,
+  .service-4 .service,
+  .service-6 .service {
+    float: none;
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .service-2,
+  .service-3,
+  .service-4,
+  .service-5,
+  .service-6 {
+    margin-top: 70px;
+  }
+
+  .service.txt {
+    margin-top: 50px;
+  }
+
+  .projects {
+    grid-row-gap: 50px;
+  }
+
+  .projects h1 {
+    font-weight: 700;
+  }
+
+  .projects h1 {
+    margin-top: 1em;
+  }
+
+  .information {
+    grid-gap: 20px;
+  }
+
+  .container::before {
+    width: 8%;
+    height: 3px;
+  }
+
+  .information span {
+    font-size: 1.5em;
+  }
+
+  #showcase-management h1::before {
+    width: 20%;
+    height: 3px;
+    top: -30%;
+    left: 40%;
+  }
+
+  #info h2 {
+    width: 100%;
+    font-size: 0.9em;
+  }
+
+  #info h2::before {
+    width: 10%;
+    top: -15px;
+    left: 45%;
+    height: 3px;
+  }
+
+  #showcase-project-1 i,
+  #showcase-project-2 i,
+  #showcase-project-3 i,
+  #showcase-project-4 i,
+  #showcase-project-5 i,
+  #showcase-project-6 i,
+  #showcase-project-7 i,
+  #showcase-project-8 i,
+  #showcase-management i {
+    top: 10px;
+    right: 10px;
+    font-size: 1em;
+  }
+}
