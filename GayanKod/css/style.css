@@ -1,0 +1,125 @@
+html {
+    min-height: 100%;
+    background: linear-gradient(0deg, rgba(34, 16, 2, 0.9), rgba(28, 180, 149, 0.2)), url(/img/bg.jpg);
+    background-size: cover;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content-container {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+.topic {
+    color: #fff;
+    font-size: 52px;
+}
+
+.content {
+    margin-top: 5%;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 10pt;
+    width: 360px;
+
+}
+
+.email-signin {
+    margin-top: 5%;
+}
+
+.email {
+    background: transparent;
+    width: 200px;
+    height: 25px;
+    color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px 5px;
+    padding-left: 15px;
+}
+
+.email::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+}
+
+.signup {
+    width: 70px;
+    height: 27px;
+    color: #fff;
+    background-color: #c77b09;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.social-container {
+    position: absolute;
+    top: 85%;
+    left: 5%;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+i {
+    padding-right: 10px;
+}
+
+.footer {
+    margin-top: 5%;
+    font-size: 10px;
+}
+
+#demo {
+    color: #c77b09;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+@media all and (max-width:420px) {
+
+    .topic {
+        display: none;
+    }
+
+    .content {
+        display: none;
+    }
+
+    .email {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        height: 35px;
+        padding-left: 0px;
+    }
+
+    .signup {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        margin-top: 3%;
+        height: 35px;
+    }
+
+    .content-container {
+        width: 100%
+    }
+
+    .social-container {
+        margin-left: 10%;
+    }
+
+    #demo {
+        margin-left: 10%;
+    }
+}
