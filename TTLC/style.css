@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background: #031323;
+  overflow: hidden;
+  font-family: 'Dancing Script', cursive;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 20px; */
+}
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+      }
+    50% {
+      background-position: 100% 50%;
+      }
+    100% {
+      background-position: 0% 50%;
+      }
+}
+
+.container {
+  border-radius: 20pt;
+  padding: 50px 20px;
+  text-align: center;
+  background-color: rgba(237, 233, 237, 0.33);
+  backdrop-filter: blur( 2px );
+  -webkit-backdrop-filter: blur( 2px );
+  padding: 20pt;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+}
+.heading {
+  background-color: #2f5c6f63;
+  border-radius: 13px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+}
+
+h3 {
+  padding: 3vh;
+  font-weight: 900;
+  font-size: 5vh;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+p {
+  font-size: 20pt;
+  padding-top: 10px;
+}
+
+.joke {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+  letter-spacing: 1px;
+  line-height: 40px;
+  margin: 50px auto;
+  max-width: 600px;
+}
+
+.btn {
+  background-color: #315f72;
+  color: rgb(255, 187, 0);
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 14px 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  outline: 0;
+}
