@@ -1,84 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SURVEY-FORM</title>
-   <style>.heading{
-    color:purple;
-    text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 2em;;
-    font-weight: 1000;
-    font-style: italic;
-    text-decoration:darkmagenta;
-    text-shadow:green;
-    text-transform: uppercase;
-    
-}
-body{
-    background-color:cyan;
-}
-#blue{
-    color:blue;
-}
-    
-form{
-    
-    border:dashed black;
-    margin:auto;
-    border-radius: 10px;
-    color:blue;
-}
-</style>
-</head>
-<body>
-<h1 class="heading"><em>WELCOME TO THE SHORT SURVEY</em></h1>
-   <div>
-     <h2 id="blue">About yourself</h2>
+    <style>
+      .heading {
+        color: purple;
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-size: 2em;
+        font-weight: 1000;
+        font-style: italic;
+        text-decoration: darkmagenta;
+        text-shadow: 0 0 green;
+        text-transform: uppercase;
+      }
+      body {
+        background-color: cyan;
+      }
+      #blue {
+        color: blue;
+      }
+
+      form {
+        border: dashed black;
+        margin: auto;
+        border-radius: 10px;
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="heading"><em>WELCOME TO THE SHORT SURVEY</em></h1>
     <form>
-    <label for="uname">Enter your name:</label>
-    <input type="text" name="uname" placeholder="Enter your name">
-    <label>Gender</label>
-    <input type="radio" name="gender" >Male
-    <input type="radio" name="gender" >Female
-    <label >Locality</label>
-    <input type="text" placeholder="enter the name of your locality" >
-    <label>Qualification</label>
-    <select name="qual">
-        <option>select your qualification</option>
-        <option>B.E</option>
-        <option>B.Tech</option>
-        <option>B.Sc</option>
-        <option>B.Com</option>
-        <option>BCA</option>
-        <option>MBA</option>
-    </select> 
-    <label>Occupation</label>
-    <select name="occupation">
-    <option>select your Occupation</option>
-    <option>Student</option>
-    <option>Faculty</option>
-    <option>Other</option>
-    </select> <br><br>
-  </div>
-    <div>
+      <div>
+        <h2 id="blue">About yourself</h2>
+        <label for="uname">Enter your name:</label>
+        <input type="text" name="uname" id="uname" placeholder="Enter your name" />
+        <label>Gender</label>
+        <input type="radio" name="gender" /> Male <input type="radio" name="gender" /> Female
+        <label for="locality">Locality</label>
+        <input type="text" name="locality" id="locality" placeholder="enter the name of your locality" />
+        <label for="qual">Qualification</label>
+        <select name="qual" id="qual">
+          <option>select your qualification</option>
+          <option>B.E</option>
+          <option>B.Tech</option>
+          <option>B.Sc</option>
+          <option>B.Com</option>
+          <option>BCA</option>
+          <option>MBA</option>
+        </select>
+        <label for="occupation">Occupation</label>
+        <select name="occupation" id="occupation">
+          <option>select your Occupation</option>
+          <option>Student</option>
+          <option>Faculty</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div>
         <h2>Contact details</h2>
-    <label for="email">Enter your Email:</label>
-    <input type="email" name="mail" placeholder="Enter your email id"><br><br>
-    </div>
-<h3>How would you ike to rateHacktoberfest 2022</h3>
-Very poor<input type="radio" name="rate"> 
-<input type="radio" name="rate" value="a"> 
-<input type="radio" name="rate" value="b"> 
-<input type="radio" name="rate" value="c">
-<input type="radio" name="rate" value="d">Excellent 
-<fieldset>
-  <legend>Any comments</legend>  
-<textarea name="comments" id="comm" cols="60" rows="10"></textarea>
-</fieldset><br><br>
-<input type="submit"/>SUBMIT
-</form>
-</body>
+        <label for="email">Enter your Email:</label>
+        <input type="email" id="email" name="mail" placeholder="Enter your email id" />
+      </div>
+      <h3>How would you ike to rateHacktoberfest 2022</h3>
+      <input type="radio" name="rate" value="0" /> Very poor
+      <input type="radio" name="rate" value="1" />
+      <input type="radio" name="rate" value="2" />
+      <input type="radio" name="rate" value="3" />
+      <input type="radio" name="rate" value="4" />
+      <input type="radio" name="rate" value="5" /> Excellent
+      <fieldset>
+        <legend>Any comments</legend>
+        <textarea name="comments" id="comm" cols="60" rows="10"></textarea>
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
 </html>
