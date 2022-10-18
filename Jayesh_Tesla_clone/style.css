@@ -1,0 +1,264 @@
+/**************************************************************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Mohave:wght@700&family=Montserrat:wght@100;200;300;400;500;600;700&family=Nothing+You+Could+Do&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: boder-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 100;
+}
+
+.header_left {
+    margin: 0 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header_left img {
+    width: 110px;
+}
+
+.header_mid ul {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header_mid ul li {
+    /*background-color:transparent;*/
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.header_mid ul li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.header_mid ul li a {
+    color: #171a20;
+    margin: 0px 8px;
+    padding: 6px 8px;
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+}
+
+.header_right {
+    margin-right: 32px;
+}
+
+.header_right ul {
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header_right ul li {
+    /*background-color:transparent;*/
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.header_right ul li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.header_right ul li a {
+    color: #171a20;
+    margin: 0px 8px;
+    padding: 6px 8px;
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+}
+
+
+/* header end */
+
+
+/*******************************************************************************************/
+
+.section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 9;
+}
+
+.section_1 {
+    background-image: url(https://thatanjan.github.io/tesla-clone-yt/media/3.avif);
+    position: relative;
+}
+
+.section_2 {
+    background-image: url(https://thatanjan.github.io/tesla-clone-yt/media/1.avif);
+    position: relative;
+}
+
+.section_3 {
+    background-image: url(https://thatanjan.github.io/tesla-clone-yt/media/2.avif);
+    position: relative;
+}
+
+.section_4 {
+    background-image: url(https://thatanjan.github.io/tesla-clone-yt/media/4.avif);
+    position: relative;
+}
+
+.section_5 {
+    background-image: url(https://thatanjan.github.io/tesla-clone-yt/media/5.avif);
+    position: relative;
+}
+
+.section_6 {
+    background-image: url(https://thatanjan.github.io/tesla-clone-yt/media/6.avif);
+    position: relative;
+}
+
+.section_7 {
+    background-image: url(https://thatanjan.github.io/tesla-clone-yt/media/7.avif);
+    position: relative;
+}
+
+.text_box {
+    width: 100%;
+    margin-top: 120px;
+    text-align: center;
+}
+
+.heding {
+    font-weight: 600;
+    font-size: 40px;
+    color: #181b21;
+}
+
+.sub_heding {
+    font-size: 14px;
+    color: #000;
+}
+
+.sub_heding a {
+    font-size: 14px;
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.sub_heding a:hover {
+    border-bottom: 2px solid #000;
+}
+
+.btn_box {
+    position: absolute;
+    bottom: 16%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn_box button {
+    width: 250px;
+    padding: 12px 24px;
+    border-radius: 20px;
+    margin: 0 20px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.primary_btn {
+    color: #fff;
+    background-color: rgba(0, 0, 0, .7);
+    cursor: pointer;
+}
+
+.secondary_btn {
+    color: #000;
+    background-color: rgba(255, 255, 255, .7);
+    cursor: pointer;
+}
+
+
+/************************footer********************************/
+
+.footer {
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer ul {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer ul li {
+    margin: 0 10px;
+    margin-top: 16px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.footer ul li a {
+    font-size: 12px;
+    color: #817a7a;
+}
+
+
+/* responsive */
+
+@media screen and (max-width: 1200px) {
+    .header_mid {
+        display: none;
+    }
+    .hide_manu {
+        display: none;
+    }
+    .header_right ul li {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .btn_box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 20px;
+        box-sizing: border-box;
+    }
+    .btn_box button {
+        width: 100%;
+        margin: 10px;
+    }
+}
