@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <title>Niral One Page Landing Page</title>
+    <style>
+      :root {
+        --fontedestaque: 'Kanit', cursive;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 5px;
+        transition: 0.3s;
+        border-radius: 5px;
+      }
+      a:hover {
+        opacity: 0.7s;
+        background-color: rgb(255, 255, 255);
+        color: #000000;
+        transition-duration: 0.5s;
+      }
+      .logo {
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: var(--fontedestaque);
+        background-color: #2D4752;
+        height: 15vh;
+      }
+      main {
+        background: url("https://images.pexels.com/photos/4665064/pexels-photo-4665064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") no-repeat center center;
+        background-size: cover;
+        height: 92vh;
+      }
+      .nav-list {
+        list-style-type: none;
+        display: flex;
+      }
+      .nav-list li {
+        letter-spacing: 2px;
+        margin-left: 32px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="#" class="logo">Niral Verma</a>
+        <ul class="nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Your Content -->
+    </main>
+  </body>
+</html>
