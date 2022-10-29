@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Nike</title>
+    <link rel="stylesheet" href="https://use.typekit.net/ttf1eme.css" />
+    <style>
+      :root {
+        --light-gray: #e8e7e7;
+        --dark-gray: #b3b3b3;
+        --darker-gray: #949493;
+        --button-hover: #ea615d;
+        --button: #f2403a;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: noka, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        background: #000;
+      }
+      #background-video {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+      }
+      .sidebar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 120px;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 2;
+        border-radius: 0 24px 24px 0;
+        background-image: url(https://assets.codepen.io/7773162/Group+2.png);
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: contain;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      h1 {
+        font-size: 8rem;
+        color: #fff;
+        font-weight: 500;
+      }
+
+
+      a {
+        color: var(--dark-gray);
+        text-decoration: none;
+        font-size: 18px;
+        text-transform: uppercase;
+      }
+
+      .logo {
+        width: 200px;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        overflow: hidden;
+        padding: 0 30px;
+      }
+      .navbar .container {
+        margin: 40px auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 80px;
+      }
+      .navbar ul {
+        justify-self: flex-end;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .navbar li {
+        padding: 0 30px;
+      }
+
+      .navbar ul li a:hover {
+        color: #fff;
+      }
+
+      .section-a {
+        height: 700px;
+        max-width: 100%;
+        position: relative;
+        margin: auto;
+      }
+
+      .section-a .container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .section-a .container .mobile {
+        display: none;
+      }
+
+      .section-a .container .full {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 60%;
+        animation: anime 3s ease;
+      }
+
+      @keyframes anime {
+        0% {
+          left: 50%;
+          opacity: 0;
+        }
+        100% {
+          left: 60%;
+          opacity: 1;
+        }
+      }
+
+      .section-a p{
+        color: var(--dark-gray);
+        padding-left: 20px;
+        margin-top: 140px;
+        margin-bottom: 40px;
+        max-width: 470px;
+        font-size: 26px;
+      }
+
+      .section-a, {
+        margin-bottom: 50px;
+      }
+
+      /* MEDIA QUERIES  */
+
+      @media (max-width: 1440px) {
+        .section-a .container img {
+          right: 0;
+        }
+      }
+
+      /* MOBILE */
+
+      @media (max-width: 700px) {
+        h1 {
+          font-size: 3rem;
+        }
+
+        .navbar .container {
+          margin: 10px auto;
+          grid-template-columns: 1fr;
+          grid-gap: 10px;
+        }
+
+        .navbar .container {
+          display: flex;
+          flex-direction: column;
+          margin: 10px auto;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .section-a .container .full {
+          display: none;
+        }
+
+        .section-a .container .mobile {
+          display: block;
+          position: absolute;
+          width: 100%;
+          left: 0;
+          bottom: 0;
+          animation: anime 1s ease;
+        }
+
+        @keyframes anime {
+          0% {
+            bottom: -20px;
+            opacity: 0;
+          }
+          100% {
+            bottom: 0;
+            opacity: 1;
+          }
+        }
+
+        .section-a .container {
+          grid-template-columns: 1fr;
+          grid-gap: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="#">
+          <img src="https://assets.codepen.io/7773162/Group+1.png" alt="nike-logo" class="logo" />
+        </a>
+        <ul class="nav">
+          <li><a href="#">Collection</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Mindmap</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+          <li><a href="#"><i class="fa-regular fa-bag-shopping"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+    <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/7773162/screen.png">
+      <source src="https://www.dropbox.com/s/yjr01q6kuj3qtvh/nike123.mp4?raw=1" type="video/mp4">
+    </video>
+    <div class="sidebar"></div>
+
+    <!-- Showcase -->
+    <section class="section-a">
+      <div class="container">
+        <div>
+          <h1>NIKE DIGITAL EDITION</h1>
+          <p class="full">
+            The main goal was To
+            replace the traditional real
+            life prototyping process with
+            fully-digital design development.
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
