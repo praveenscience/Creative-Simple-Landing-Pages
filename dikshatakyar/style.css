@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #000000 center no-repeat;
+    background-size:cover;
+    flex-direction: column;
+    font-size: 2rem;
+}
+
+h1,h2{
+    font-family: 'Finger Paint', cursive;
+}
+
+/* .shadow{
+    position: absolute; 
+     top:10px;
+} */
+
+h1:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+ul{
+    list-style-type: none;
+    
+}
+li{
+    padding: 20px;
+    background-color: #6b0f1a;
+background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
+clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+padding: 80px;
+}
+
+li,p{
+    font-family: 'Crimson Text', serif;
+}
+
+p{
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    padding: 30px;    
+}
+
+.linkedIn{
+    color:#0077b5;
+}
+
+.github{
+   color: #333;
+}
+
+.handles a{
+    text-decoration: none;
+    background-color: beige;
+    padding: 15px;
+    margin: 50px;
+    font-weight: 900;
+    background-color:rgb(216, 176, 255);
+    font-size: large;
+    border-radius: 50px;
+   
+}
+
+.handles a:hover{
+  box-shadow: 7px 7px 2px 1px rgba(222, 152, 255, 0.2);
+}
+
