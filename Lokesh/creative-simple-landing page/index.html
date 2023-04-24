@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- ===== STYLE.CSS ===== -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- ===== REMIXICON CDN ===== -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Responsive Product Landing Page HTML CSS & JS</title>
+  </head>
+  <body>
+    <!-- ===== OVERLAY ===== -->
+    <div class="overlay first"></div>
+    <div class="overlay second"></div>
+    <div class="overlay third"></div>
+
+    <!-- ===== CONTAINER'S ===== -->
+    <div class="left_container"></div>
+    <div class="right_container"></div>
+
+    <!-- ===== STRIPS ===== -->
+    <div class="strips">
+        <div class="left_strip"></div>
+        <div class="right_strip"></div>
+    </div>
+
+    <!-- ===== NAVBAR ===== -->
+    <header>
+      <nav class="nav body_layout">
+        <div class="nav_insider">
+          <div class="logo">
+            <h3 class="nav__icon">levi's <sup>&reg;</sup></h3>
+          </div>
+
+
+          <div class="nav__menu" id="nav__menu">
+              <ul class="nav__list">
+                  <li class="nav__item"><a href="#" class="nav__link">man</a></li>
+                  <li class="nav__item"><a href="#" class="nav__link">women</a></li>
+                  <li class="nav__item"><a href="#" class="nav__link">kids</a></li>
+                  <li class="nav__item search_btn">
+                    <button class="search_btn">
+                      <i class="ri-search-line"></i>
+                    </button>
+                  </li>
+                  <li class="nav__item cart_btn">
+                    <button class="cart_btn">
+                        <i class="ri-shopping-bag-fill"></i>
+                    </button>
+                  </li>
+              </ul>
+          </div>  
+        </div>
+
+        <div class="cart_btn_wrapper">
+          <button class="search_btn"><i class="ri-search-line"></i></button>
+          <button class="cart_btn"> <i class="ri-shopping-bag-fill"></i></button>
+        </div>
+
+        <button class="menu_toggle_btn" id="menu_toggle_btn">
+          <i class="ri-menu-3-fill nav__icon"></i>
+        </button>
+      </nav>
+    </header>
+
+    <!-- ===== SOCIAL ===== -->
+    <div class="social">
+        <ul class="social__list">
+            <li class="social_item"><i class="ri-facebook-fill"></i></li>
+            <li class="social_item"><i class="ri-instagram-fill"></i></li>
+            <li class="social_item"><i class="ri-twitter-fill"></i></li>
+        </ul>
+    </div>
+
+    <!-- ===== PRODUCT-IMAGE ===== -->
+    <img src="./img/levis.png" class="product_img" alt="product_img">
+
+    <!-- ===== PRODUCT-INFO ===== -->
+    <div class="product_text">
+      <h1 class="product_title">Hacktoberfest <sup>&reg;</sup></h1>
+      <p class="product_type">Half sleeves 2021</p>
+    </div>
+
+    <!-- ===== BOTTOM-NAV ===== -->
+    <div class="bottom_nav">
+        <div class="slide_nav_wrapper">
+            <button class="prev direction_btn"><i class="ri-arrow-right-s-line"></i></button>
+            <button class="next direction_btn"><i class="ri-arrow-left-s-line"></i></button>
+        </div>
+        <div class="dots_wrapper">
+          <ul class="dots">
+            <li class="dot"></li>
+            <li class="dot"></li>
+            <li class="dot active"></li>
+            <li class="dot"></li>
+            <li class="dot"></li>
+
+          </ul>
+        </div>
+    </div>
+
+    <!-- ===== GSAP CDN ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <!-- ===== SCRIPT.JS ===== -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
