@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #d8dee9;
+  color: #d8dee9;
+}
+
+nav {
+  display: flex;
+  padding: 2% 10%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a img {
+  width: 60px;
+}
+
+.header {
+  width: 100%;
+  position: relative;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 10px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: #2e3440;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #4c566a;
+  display: block;
+  margin: auto;
+  transition: 0.75s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.Container {
+  background-color: #3b4252;
+  width: 65%;
+  margin: auto;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-shadow: 10px 10px 30px 5px rgba(76, 86, 106, 1);
+  -moz-box-shadow: 10px 10px 30px 5px rgba(76, 86, 106, 1);
+  box-shadow: 10px 10px 30px 5px rgba(76, 86, 106, 1);
+  border-radius: 10px;
+}
+
+.Container img {
+  width: 25%;
+  border-radius: 50%;
+  float: right;
+  -webkit-box-shadow: 10px 10px 30px 5px rgba(76, 86, 106, 1);
+  -moz-box-shadow: 10px 10px 30px 5px rgba(76, 86, 106, 1);
+  box-shadow: 10px 10px 30px 5px rgba(76, 86, 106, 1);
+}
+
+.Container h1 {
+  text-align: left;
+  font-size: 24px;
+}
+
+.Container h3 {
+  text-align: left;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.Container p {
+  text-align: left;
+  font-size: 18px;
+}
+
+@media (max-width: 1000px) {
+  .Container h3 {
+    text-align: left;
+    font-size: 18px;
+    font-style: italic;
+  }
+
+  .Container p {
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .Container img {
+    width: 45%;
+    border-radius: 50%;
+    float: right;
+    margin-right: -95px;
+  }
+
+  .gallary .row {
+    flex-direction: column;
+  }
+}
+
+.GitHub {
+  background-color: #434c5e;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 10px;
+}
+
+.GitHub img {
+  border-radius: 0%;
+  width: 115%;
+  margin-right: 0px;
+  float: none;
+  -webkit-box-shadow: 10px 10px 30px 5px rgba(76, 86, 106, 1);
+  -moz-box-shadow: 10px 10px 30px 5px rgba(76, 86, 106, 1);
+  box-shadow: 10px 10px 30px 5px rgba(76, 86, 106, 1);
+}
+
+.Container .row .col a img {
+  width: 100%;
+  border-radius: 0%;
+  float: none;
+  margin-right: 0px;
+}
