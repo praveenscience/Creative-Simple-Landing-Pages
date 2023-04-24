@@ -1,0 +1,17 @@
+body{
+    background: #ea60ec;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #00dbde, #fc00ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #c6f1ec, #054b46); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+   display:flex; 
+    justify-content: center;
+    align-items: center; 
+     min-height: 100vh; 
+    font-size: 40px;
+    text-align: center;
+    color:rgb(17, 16, 16);
+}
+
+.description{
+    transform: 0.9s ease-in-out;
+}
