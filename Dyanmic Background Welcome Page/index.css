@@ -1,0 +1,23 @@
+
+
+
+#changer{
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+border: 2px solid white;    
+color:white;
+background-color: black;
+height: 30vh; 
+height: 100vh;
+font-size: 2rem;
+
+}
+
+
+ 
+
+
