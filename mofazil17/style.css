@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@100,200;100,300;100,400;100,500;100,600;100,700;100,800;100,900;119.6,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+}
+body{
+    background: rgb(7,62,142);
+    background: linear-gradient(220deg, rgba(7,62,142,1) 0%, rgba(11,34,61,1) 100%);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+body::before{
+    content: " ";
+    clip-path: circle(25% at 17% 10%);
+    background-color: azure;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background:linear-gradient(20deg , #01266b ,rgba(255, 255, 255, 0.616))
+}
+body::after{
+    content: " ";
+    clip-path: circle(35% at 90% 100%);
+    background-color: azure;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background:linear-gradient(60deg , #2659b8d7 ,rgba(84, 87, 90, 0.616))
+}
+.container{
+    width: 600px;
+    height: 450px;
+    background-color:rgba(5, 5, 5, 0.24);
+    border-radius:30px ;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    cursor:none;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top ul{
+    margin: 0 15px;
+    font-family: 'Inconsolata', monospace;
+}
+.top ul li {
+    list-style: none;
+    color: azure;
+    font-size:30px;
+    margin: -5px;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+.top .error404{
+    font-size:200px;
+    font-family: 'Inconsolata', monospace;
+}
+.top .exclamation{
+    font-size: 200px;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+p{
+    font-family: 'Gemunu Libre', sans-serif;
+    color: white;
+    font-weight: 200px;
+    font-size: 50px
+    
+}
